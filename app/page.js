@@ -248,7 +248,7 @@ export default function Home() {
       <footer className="bg-gray-800 text-white mt-12 py-6">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">
-            © 2025 WhoToConsult. This tool only serves as a guide and does not constitute actual medical advice. 
+            © 2025 WhoToConsult. This tool serves only as a guide and does not constitute actual medical advice. 
           </p>
           <p className="text-xs mt-2 text-gray-400">
             Diagnosis and treatment should be done by a qualified healthcare professional. 
