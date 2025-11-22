@@ -85,9 +85,23 @@ export default function Home() {
     // Specialists that don't apply to children/teens (under 18)
     const adultOnlySpecialists = ['ob-gyn', 'urologist', 'internal medicine'];
     
-    // For young children (≤12), filter out reproductive specialists
-    if (ageNum <= 12 && ['ob-gyn', 'urologist'].includes(specialist)) {
-      return null;
+    // For young children (≤12), filter out reproductive/sexual health specialists
+    if (ageNum <= 12) {
+      if (specialist === 'ob-gyn') {
+        return null;
+      }
+      
+      // Filter urologist for sexual/reproductive symptoms only
+      const sexualSymptoms = [
+        'erectile dysfunction', 'impotence', 'premature ejaculation', 'sexual dysfunction',
+        'blood in semen', 'penile discharge', 'penile pain', 'pain during intercourse',
+        'genital sores', 'genital warts', 'sexually transmitted disease',
+        'chlamydia symptoms', 'gonorrhea symptoms', 'syphilis symptoms'
+      ];
+      
+      if (specialist === 'urologist' && selectedSymptoms.some(symptom => sexualSymptoms.includes(symptom))) {
+        return null;
+      }
     }
     
     // For all children/teens (≤17), filter out internal medicine

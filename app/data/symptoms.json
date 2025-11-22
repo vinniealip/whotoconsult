@@ -925,11 +925,15 @@
   },
   "groin lump": {
     "general surgeon": 4,
-    "urologist": 3
+    "urologist": 3,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "groin pain": {
     "urologist": 3,
-    "orthopedic": 2
+    "pediatrician": 3,
+    "orthopedic": 2,
+    "family medicine": 2
   },
   "growing pains": {
     "pediatrician": 3,
@@ -2203,13 +2207,19 @@
   },
   "testicular lump": {
     "urologist": 5,
-    "oncologist": 4
+    "oncologist": 4,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "testicular pain": {
-    "urologist": 5
+    "urologist": 5,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "testicular swelling": {
-    "urologist": 5
+    "urologist": 5,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "throat clearing": {
     "ent": 3
