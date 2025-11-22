@@ -44,6 +44,13 @@ export default function Home() {
         reason: 'Your symptoms indicate a potential emergency. Please seek immediate medical attention.',
         alternatives: []
       });
+      // Scroll to results after setting state
+      setTimeout(() => {
+        document.getElementById('results-section')?.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
       return;
     }
 
@@ -71,6 +78,13 @@ export default function Home() {
         reason: 'Your symptoms are general. Start with a general practitioner.',
         alternatives: []
       });
+      // Scroll to results after setting state
+      setTimeout(() => {
+        document.getElementById('results-section')?.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
       return;
     }
 
@@ -87,6 +101,14 @@ export default function Home() {
       reason: `Based on your symptoms (${selectedSymptoms.join(', ')}), a ${topSpecialist} is best suited to help you.`,
       alternatives
     });
+
+    // Scroll to results after setting state
+    setTimeout(() => {
+      document.getElementById('results-section')?.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }, 100);
   };
 
   return (
@@ -193,7 +215,9 @@ export default function Home() {
 
           {/* Results */}
           {result && (
-            <div className={`rounded-lg shadow-lg p-6 ${
+            <div 
+              id="results-section"
+              className={`rounded-lg shadow-lg p-6 ${
               result.type === 'emergency' 
                 ? 'bg-red-50 border-2 border-red-500' 
                 : 'bg-green-50 border-2 border-green-500'
