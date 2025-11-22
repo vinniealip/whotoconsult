@@ -262,23 +262,24 @@ export default function Home() {
           {/* Age Input */}
           <div className="bg-white rounded-lg shadow-md p-6 mb-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">Your Age</h2>
-            <p className="text-gray-700 mb-4">We need your age to recommend the most appropriate type of specialist.</p>
-            <input
-              type="number"
-              placeholder="Enter your age"
+            <p className="text-gray-700 mb-4">We need your age group to recommend the most appropriate type of specialist.</p>
+            <select
               value={age}
               onChange={(e) => setAge(e.target.value)}
-              className="w-full max-w-xs px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              min="0"
-              max="120"
-            />
+              className="w-full max-w-xs px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+            >
+              <option value="">Select your age group</option>
+              <option value="5">0-12 years (Child)</option>
+              <option value="15">13-17 years (Teenager)</option>
+              <option value="25">18+ years (Adult)</option>
+            </select>
           </div>
 
           {/* Instructions */}
           <div className="bg-white rounded-lg shadow-md p-6 mb-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">How it works</h2>
             <ol className="list-decimal list-inside space-y-2 text-gray-700">
-              <li>Enter your age above</li>
+              <li>Select your age group above</li>
               <li>Select all symptoms you're experiencing from the list below</li>
               <li>Click "Find the Right Specialist" to get your recommendation</li>
               <li>See which doctor to consult and why</li>
@@ -364,9 +365,9 @@ export default function Home() {
             {(!age || selectedSymptoms.length === 0) && (
               <p className="text-sm text-gray-500 mt-2">
                 {!age && selectedSymptoms.length === 0 
-                  ? 'Please enter your age and select symptoms'
+                  ? 'Please select your age group and symptoms'
                   : !age 
-                    ? 'Please enter your age'
+                    ? 'Please select your age group'
                     : 'Please select at least one symptom'}
               </p>
             )}
