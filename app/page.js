@@ -95,6 +95,11 @@ export default function Home() {
       return null;
     }
     
+    // For adults (≥18), filter out pediatrician
+    if (ageNum >= 18 && specialist === 'pediatrician') {
+      return null;
+    }
+    
     // For teenagers, some reproductive health specialists are appropriate
     if (ageNum <= 17) {
       // Specialists that should remain as pediatric versions
