@@ -107,8 +107,8 @@ export default function Home() {
         'cardiologist', 'neurologist', 'dermatologist', 'gastroenterologist',
         'pulmonologist', 'endocrinologist', 'rheumatologist', 'hematologist',
         'oncologist', 'orthopedic', 'ent', 'ophthalmologist', 'psychiatrist',
-        'allergist', 'nephrologist', 'neurosurgeon', 'general surgeon',
-        'infectious disease', 'immunologist'
+        'allergist', 'nephrologist', 'urologist', 'neurosurgeon', 'general surgeon',
+        'infectious disease', 'immunologist', 'vascular surgeon', 'plastic surgeon'
       ];
       
       if (pediatricSpecialists.includes(specialist)) {
@@ -130,9 +130,6 @@ export default function Home() {
       if (ageNum >= 13) {
         if (specialist === 'ob-gyn') {
           return 'Adolescent Gynecologist';
-        }
-        if (specialist === 'urologist') {
-          return 'Pediatric Urologist';
         }
       }
     } else {
