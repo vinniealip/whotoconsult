@@ -448,6 +448,11 @@ export default function Home() {
           <p className="text-xs mt-2 text-gray-400">
             Diagnosis and treatment should be done by a qualified healthcare professional. 
           </p>
+          <div className="mt-4 pt-4 border-t border-gray-700">
+            <p className="text-sm text-gray-300">
+              Business inquiries: <a href="mailto:contact@whotoconsult.com" className="text-blue-400 hover:text-blue-300">contact@whotoconsult.com</a>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
