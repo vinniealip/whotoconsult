@@ -7,6 +7,7 @@ export default function Home() {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
   const [result, setResult] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [age, setAge] = useState('');
 
   // Get all unique symptoms from the data
   const allSymptoms = Object.keys(symptomData);
@@ -77,10 +78,69 @@ export default function Home() {
     setResult(null); // Clear result when changing symptoms
   };
 
+  // Function to get age-appropriate specialist name
+  const getAgeAppropriateSpecialist = (specialist, userAge) => {
+    const ageNum = parseInt(userAge);
+    
+    // Specialists that don't apply to young children
+    const adultOnlySpecialists = ['ob-gyn', 'urologist'];
+    if (ageNum <= 10 && adultOnlySpecialists.includes(specialist)) {
+      return null; // Filter out these specialists for young children
+    }
+    
+    // For teenagers, some reproductive health specialists are appropriate
+    if (ageNum <= 17) {
+      // Specialists that should remain as pediatric versions
+      const pediatricSpecialists = [
+        'cardiologist', 'neurologist', 'dermatologist', 'gastroenterologist',
+        'pulmonologist', 'endocrinologist', 'rheumatologist', 'hematologist',
+        'oncologist', 'orthopedic', 'ent', 'ophthalmologist', 'psychiatrist',
+        'allergist', 'nephrologist', 'neurosurgeon', 'general surgeon',
+        'infectious disease', 'immunologist'
+      ];
+      
+      if (pediatricSpecialists.includes(specialist)) {
+        return `Pediatric ${specialist.charAt(0).toUpperCase() + specialist.slice(1)}`;
+      }
+      
+      // Specialists that remain the same for children
+      const sameForChildren = [
+        'pediatrician', 'dentist', 'family medicine', 'internal medicine',
+        'podiatrist', 'plastic surgeon', 'sports medicine', 'pain management',
+        'psychologist', 'vascular surgeon', 'diabetologist', 'nutritionist'
+      ];
+      
+      if (sameForChildren.includes(specialist)) {
+        return specialist.charAt(0).toUpperCase() + specialist.slice(1);
+      }
+      
+      // Handle special cases for teenagers (13-17)
+      if (ageNum >= 13) {
+        if (specialist === 'ob-gyn') {
+          return 'Adolescent Gynecologist';
+        }
+        if (specialist === 'urologist') {
+          return 'Pediatric Urologist';
+        }
+      }
+    } else {
+      // Adults (18+) - return specialist names as-is but capitalized
+      return specialist.charAt(0).toUpperCase() + specialist.slice(1).replace(/-/g, '-');
+    }
+    
+    // Default fallback
+    return specialist.charAt(0).toUpperCase() + specialist.slice(1);
+  };
+
   // Calculate which specialist to recommend
   const findSpecialist = () => {
     if (selectedSymptoms.length === 0) {
       alert('Please select at least one symptom');
+      return;
+    }
+    
+    if (!age || age < 0 || age > 120) {
+      alert('Please enter a valid age');
       return;
     }
 
@@ -118,14 +178,24 @@ export default function Home() {
       }
     });
 
+    // Filter and map specialists based on age
+    const ageFilteredSpecialists = {};
+    Object.entries(specialistScores).forEach(([specialist, score]) => {
+      const ageAppropriateSpecialist = getAgeAppropriateSpecialist(specialist, age);
+      if (ageAppropriateSpecialist) {
+        ageFilteredSpecialists[ageAppropriateSpecialist] = score;
+      }
+    });
+
     // Sort specialists by score
-    const sortedSpecialists = Object.entries(specialistScores)
+    const sortedSpecialists = Object.entries(ageFilteredSpecialists)
       .sort((a, b) => b[1] - a[1]);
 
     if (sortedSpecialists.length === 0) {
+      const generalSpecialist = parseInt(age) <= 17 ? 'Pediatrician' : 'Internal Medicine / General Practitioner';
       setResult({
         type: 'general',
-        specialist: 'Internal Medicine / General Practitioner',
+        specialist: generalSpecialist,
         reason: 'Your symptoms are general. Start with a general practitioner.',
         alternatives: []
       });
@@ -176,10 +246,26 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           
+          {/* Age Input */}
+          <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">Your Age</h2>
+            <p className="text-gray-700 mb-4">We need your age to recommend the most appropriate type of specialist.</p>
+            <input
+              type="number"
+              placeholder="Enter your age"
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
+              className="w-full max-w-xs px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              min="0"
+              max="120"
+            />
+          </div>
+
           {/* Instructions */}
           <div className="bg-white rounded-lg shadow-md p-6 mb-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">How it works</h2>
             <ol className="list-decimal list-inside space-y-2 text-gray-700">
+              <li>Enter your age above</li>
               <li>Select all symptoms you're experiencing from the list below</li>
               <li>Click "Find the Right Specialist" to get your recommendation</li>
               <li>See which doctor to consult and why</li>
@@ -253,15 +339,24 @@ export default function Home() {
           <div className="text-center mb-6">
             <button
               onClick={findSpecialist}
-              disabled={selectedSymptoms.length === 0}
+              disabled={selectedSymptoms.length === 0 || !age}
               className={`px-8 py-4 rounded-lg text-lg font-bold transition-all ${
-                selectedSymptoms.length === 0
+                selectedSymptoms.length === 0 || !age
                   ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   : 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl'
               }`}
             >
               Find the Right Specialist
             </button>
+            {(!age || selectedSymptoms.length === 0) && (
+              <p className="text-sm text-gray-500 mt-2">
+                {!age && selectedSymptoms.length === 0 
+                  ? 'Please enter your age and select symptoms'
+                  : !age 
+                    ? 'Please enter your age'
+                    : 'Please select at least one symptom'}
+              </p>
+            )}
           </div>
 
           {/* Results */}
