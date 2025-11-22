@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'WhoToConsult - Find the Right Medical Specialist',
-  description: 'Free symptom checker to help you find the right medical specialist for your symptoms. Get expert guidance on which doctor to consult.',
+  description: 'Free symptom checker to help you find the right medical specialist for your symptoms. Get guidance on which doctor to consult.',
   keywords: 'symptom checker, medical specialist, doctor finder, health consultation, medical advice',
   icons: {
     icon: '/favicon.ico',
