@@ -1,0 +1,260 @@
+'use client';
+
+import { useState } from 'react';
+import symptomData from './data/symptoms.json';
+
+export default function Home() {
+  const [selectedSymptoms, setSelectedSymptoms] = useState([]);
+  const [result, setResult] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Get all unique symptoms from the data
+  const allSymptoms = Object.keys(symptomData);
+
+  // Filter symptoms based on search
+  const filteredSymptoms = allSymptoms.filter(symptom =>
+    symptom.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Toggle symptom selection
+  const toggleSymptom = (symptom) => {
+    if (selectedSymptoms.includes(symptom)) {
+      setSelectedSymptoms(selectedSymptoms.filter(s => s !== symptom));
+    } else {
+      setSelectedSymptoms([...selectedSymptoms, symptom]);
+    }
+    setResult(null); // Clear result when changing symptoms
+  };
+
+  // Calculate which specialist to recommend
+  const findSpecialist = () => {
+    if (selectedSymptoms.length === 0) {
+      alert('Please select at least one symptom');
+      return;
+    }
+
+    // Check for red flags first
+    const redFlags = ['chest pain spreading to arm', 'sudden severe headache', 'difficulty breathing', 'loss of consciousness'];
+    const hasRedFlag = selectedSymptoms.some(symptom => redFlags.includes(symptom));
+    
+    if (hasRedFlag) {
+      setResult({
+        type: 'emergency',
+        specialist: 'Emergency Department',
+        reason: 'Your symptoms indicate a potential emergency. Please seek immediate medical attention.',
+        alternatives: []
+      });
+      return;
+    }
+
+    // Calculate specialist scores
+    const specialistScores = {};
+    
+    selectedSymptoms.forEach(symptom => {
+      const specialists = symptomData[symptom];
+      if (specialists) {
+        Object.keys(specialists).forEach(specialist => {
+          const weight = specialists[specialist];
+          specialistScores[specialist] = (specialistScores[specialist] || 0) + weight;
+        });
+      }
+    });
+
+    // Sort specialists by score
+    const sortedSpecialists = Object.entries(specialistScores)
+      .sort((a, b) => b[1] - a[1]);
+
+    if (sortedSpecialists.length === 0) {
+      setResult({
+        type: 'general',
+        specialist: 'Internal Medicine / General Practitioner',
+        reason: 'Your symptoms are general. Start with a general practitioner.',
+        alternatives: []
+      });
+      return;
+    }
+
+    const [topSpecialist, topScore] = sortedSpecialists[0];
+    const alternatives = sortedSpecialists
+      .slice(1, 3)
+      .filter(([_, score]) => score >= topScore - 2)
+      .map(([specialist]) => specialist);
+
+    setResult({
+      type: 'specialist',
+      specialist: topSpecialist,
+      score: topScore,
+      reason: `Based on your symptoms (${selectedSymptoms.join(', ')}), a ${topSpecialist} is best suited to help you.`,
+      alternatives
+    });
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      {/* Header */}
+      <header className="bg-blue-600 text-white shadow-lg">
+        <div className="container mx-auto px-4 py-6">
+          <h1 className="text-4xl font-bold">WhoToConsult</h1>
+          <p className="text-xl mt-2">Find the right medical specialist for your symptoms</p>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto">
+          
+          {/* Instructions */}
+          <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">How it works</h2>
+            <ol className="list-decimal list-inside space-y-2 text-gray-700">
+              <li>Select all symptoms you're experiencing from the list below</li>
+              <li>Click "Find the Right Specialist" to get your recommendation</li>
+              <li>See which doctor to consult and why</li>
+            </ol>
+            <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+              <p className="text-sm text-yellow-800">
+                <strong>Important:</strong> This tool provides guidance only. It does not replace professional medical advice. 
+                If you have severe or emergency symptoms, call emergency services immediately.
+              </p>
+            </div>
+          </div>
+
+          {/* Symptom Search */}
+          <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Select Your Symptoms</h2>
+            
+            <input
+              type="text"
+              placeholder="Search symptoms... (e.g., headache, fever, cough)"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent mb-4"
+            />
+
+            {/* Selected Symptoms */}
+            {selectedSymptoms.length > 0 && (
+              <div className="mb-4">
+                <h3 className="font-semibold text-gray-700 mb-2">Selected Symptoms ({selectedSymptoms.length}):</h3>
+                <div className="flex flex-wrap gap-2">
+                  {selectedSymptoms.map(symptom => (
+                    <span
+                      key={symptom}
+                      className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2"
+                    >
+                      {symptom}
+                      <button
+                        onClick={() => toggleSymptom(symptom)}
+                        className="text-blue-600 hover:text-blue-800 font-bold"
+                      >
+                        ×
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Symptom List */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 max-h-96 overflow-y-auto">
+              {filteredSymptoms.map(symptom => (
+                <button
+                  key={symptom}
+                  onClick={() => toggleSymptom(symptom)}
+                  className={`text-left px-4 py-2 rounded-lg border-2 transition-all ${
+                    selectedSymptoms.includes(symptom)
+                      ? 'border-blue-500 bg-blue-50 text-blue-700 font-semibold'
+                      : 'border-gray-200 hover:border-blue-300 text-gray-700'
+                  }`}
+                >
+                  {symptom}
+                </button>
+              ))}
+            </div>
+
+            {filteredSymptoms.length === 0 && (
+              <p className="text-gray-500 text-center py-8">No symptoms found matching "{searchTerm}"</p>
+            )}
+          </div>
+
+          {/* Find Specialist Button */}
+          <div className="text-center mb-6">
+            <button
+              onClick={findSpecialist}
+              disabled={selectedSymptoms.length === 0}
+              className={`px-8 py-4 rounded-lg text-lg font-bold transition-all ${
+                selectedSymptoms.length === 0
+                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  : 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl'
+              }`}
+            >
+              Find the Right Specialist
+            </button>
+          </div>
+
+          {/* Results */}
+          {result && (
+            <div className={`rounded-lg shadow-lg p-6 ${
+              result.type === 'emergency' 
+                ? 'bg-red-50 border-2 border-red-500' 
+                : 'bg-green-50 border-2 border-green-500'
+            }`}>
+              {result.type === 'emergency' ? (
+                <>
+                  <h2 className="text-3xl font-bold text-red-700 mb-3">⚠️ Seek Emergency Care</h2>
+                  <p className="text-lg text-red-800">{result.reason}</p>
+                  <div className="mt-4 p-4 bg-red-100 rounded">
+                    <p className="font-bold text-red-900">Call emergency services or go to the nearest hospital immediately.</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className="text-3xl font-bold text-green-700 mb-3">
+                    Recommended Specialist: {result.specialist}
+                  </h2>
+                  <p className="text-lg text-gray-700 mb-4">{result.reason}</p>
+                  
+                  {result.alternatives && result.alternatives.length > 0 && (
+                    <div className="mt-4 p-4 bg-white rounded border border-green-200">
+                      <h3 className="font-semibold text-gray-800 mb-2">Alternative Specialists:</h3>
+                      <ul className="list-disc list-inside text-gray-700">
+                        {result.alternatives.map(alt => (
+                          <li key={alt}>{alt}</li>
+                        ))}
+                      </ul>
+                      <p className="text-sm text-gray-600 mt-2">
+                        These specialists may also be able to help with your symptoms.
+                      </p>
+                    </div>
+                  )}
+
+                  <div className="mt-6 p-4 bg-blue-50 rounded">
+                    <h3 className="font-semibold text-blue-900 mb-2">Next Steps:</h3>
+                    <ul className="list-decimal list-inside text-blue-800 space-y-1">
+                      <li>Book an appointment with a {result.specialist}</li>
+                      <li>Prepare a list of your symptoms and when they started</li>
+                      <li>Bring any relevant medical records</li>
+                      <li>Note any medications you're currently taking</li>
+                    </ul>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white mt-12 py-6">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm">
+            © 2024 WhoToConsult. This tool is for informational purposes only and does not constitute medical advice.
+          </p>
+          <p className="text-xs mt-2 text-gray-400">
+            Always consult with a qualified healthcare professional for proper diagnosis and treatment.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
