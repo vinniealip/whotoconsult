@@ -1,23 +1,112 @@
 {
+  "abdominal bloating": {
+    "gastroenterologist": 3,
+    "internal medicine": 1
+  },
+  "abdominal cramps": {
+    "gastroenterologist": 4,
+    "internal medicine": 2
+  },
   "abdominal pain": {
     "gastroenterologist": 4,
     "internal medicine": 2
   },
-  "acne": {
-    "dermatologist": 4
+  "abdominal pain lower right": {
+    "gastroenterologist": 5,
+    "internal medicine": 2
+  },
+  "abdominal swelling": {
+    "gastroenterologist": 4,
+    "internal medicine": 2
+  },
+  "abnormal bleeding": {
+    "ob-gyn": 5,
+    "internal medicine": 2
+  },
+  "abnormal heart rhythm": {
+    "cardiologist": 5
+  },
+  "abnormal moles": {
+    "dermatologist": 5
+  },
+  "aches and pains": {
+    "internal medicine": 2
   },
   "acid reflux": {
     "gastroenterologist": 4
   },
+  "acne": {
+    "dermatologist": 4
+  },
+  "acne scars": {
+    "dermatologist": 4
+  },
   "adhd symptoms": {
     "psychiatrist": 4
+  },
+  "age spots": {
+    "dermatologist": 3
+  },
+  "alcohol dependence": {
+    "psychiatrist": 5,
+    "internal medicine": 2
+  },
+  "allergic reaction": {
+    "allergist": 5,
+    "internal medicine": 2
+  },
+  "allergic rhinitis": {
+    "allergist": 4,
+    "ent": 2
   },
   "allergies": {
     "allergist": 4
   },
+  "alopecia": {
+    "dermatologist": 4
+  },
+  "anal bleeding": {
+    "gastroenterologist": 5,
+    "internal medicine": 2
+  },
+  "anal itching": {
+    "gastroenterologist": 3
+  },
+  "anal pain": {
+    "gastroenterologist": 4
+  },
+  "anemia symptoms": {
+    "internal medicine": 4,
+    "hematologist": 3
+  },
+  "ankle pain": {
+    "orthopedic": 4
+  },
+  "ankle swelling": {
+    "cardiologist": 3,
+    "internal medicine": 2
+  },
+  "annual checkup": {
+    "family medicine": 5
+  },
   "anxiety": {
     "psychiatrist": 4,
     "psychologist": 3
+  },
+  "anxiety attacks": {
+    "psychiatrist": 4,
+    "psychologist": 3
+  },
+  "arm numbness": {
+    "neurologist": 4,
+    "orthopedic": 2
+  },
+  "arm pain": {
+    "orthopedic": 3,
+    "neurologist": 2
+  },
+  "arm weakness": {
+    "neurologist": 4
   },
   "arthritis": {
     "rheumatologist": 4,
@@ -26,151 +115,1000 @@
   "asthma": {
     "pulmonologist": 4
   },
+  "asthma attack": {
+    "pulmonologist": 5
+  },
+  "athlete's foot": {
+    "dermatologist": 3,
+    "podiatrist": 3
+  },
+  "atrial fibrillation": {
+    "cardiologist": 5
+  },
+  "attention problems": {
+    "psychiatrist": 3,
+    "neurologist": 2
+  },
+  "autoimmune symptoms": {
+    "rheumatologist": 4,
+    "internal medicine": 3
+  },
   "back pain": {
     "orthopedic": 3,
     "neurologist": 2
   },
+  "back pain lower": {
+    "orthopedic": 4,
+    "neurologist": 2
+  },
+  "back pain upper": {
+    "orthopedic": 3,
+    "pulmonologist": 1
+  },
+  "back stiffness": {
+    "orthopedic": 3,
+    "rheumatologist": 2
+  },
   "bad breath": {
-    "dentist": 3
+    "dentist": 3,
+    "ent": 1
+  },
+  "balance problems": {
+    "neurologist": 4,
+    "ent": 3
+  },
+  "baldness": {
+    "dermatologist": 4
+  },
+  "bedwetting": {
+    "urologist": 3,
+    "pediatrician": 3
+  },
+  "belching": {
+    "gastroenterologist": 2
+  },
+  "bell's palsy": {
+    "neurologist": 5
+  },
+  "bipolar symptoms": {
+    "psychiatrist": 5
+  },
+  "birth control consultation": {
+    "ob-gyn": 4
+  },
+  "black stool": {
+    "gastroenterologist": 5
+  },
+  "bladder control problems": {
+    "urologist": 4
+  },
+  "bladder infection": {
+    "urologist": 4,
+    "internal medicine": 2
+  },
+  "bladder pain": {
+    "urologist": 4
+  },
+  "bleeding gums": {
+    "dentist": 4
+  },
+  "blisters": {
+    "dermatologist": 3
   },
   "bloating": {
-    "gastroenterologist": 2
+    "gastroenterologist": 2,
+    "internal medicine": 1
+  },
+  "blood clots": {
+    "hematologist": 5,
+    "cardiologist": 4
+  },
+  "blood in semen": {
+    "urologist": 5
   },
   "blood in stool": {
     "gastroenterologist": 5
   },
   "blood in urine": {
-    "urologist": 5
+    "urologist": 5,
+    "nephrologist": 4
+  },
+  "blood pressure high": {
+    "cardiologist": 4,
+    "nephrologist": 3,
+    "internal medicine": 2
+  },
+  "blood pressure low": {
+    "cardiologist": 3,
+    "internal medicine": 2
+  },
+  "blood sugar high": {
+    "endocrinologist": 5,
+    "diabetologist": 5
+  },
+  "blood sugar low": {
+    "endocrinologist": 4,
+    "diabetologist": 4
+  },
+  "bloody nose": {
+    "ent": 3
   },
   "blurred vision": {
     "ophthalmologist": 3,
     "neurologist": 1
   },
-  "carpal tunnel": {
+  "body aches": {
+    "internal medicine": 2
+  },
+  "body odor": {
+    "dermatologist": 2,
+    "internal medicine": 1
+  },
+  "boils": {
+    "dermatologist": 4
+  },
+  "bone fracture": {
+    "orthopedic": 5
+  },
+  "bone pain": {
+    "orthopedic": 4,
+    "oncologist": 2
+  },
+  "bone spurs": {
     "orthopedic": 4
+  },
+  "bowel incontinence": {
+    "gastroenterologist": 4
+  },
+  "breast lump": {
+    "ob-gyn": 5,
+    "oncologist": 4
+  },
+  "breast pain": {
+    "ob-gyn": 4
+  },
+  "breast tenderness": {
+    "ob-gyn": 3
+  },
+  "breathing difficulty": {
+    "pulmonologist": 5
+  },
+  "breathing problems": {
+    "pulmonologist": 4,
+    "cardiologist": 2
+  },
+  "brittle nails": {
+    "dermatologist": 2,
+    "internal medicine": 1
+  },
+  "bronchitis": {
+    "pulmonologist": 4,
+    "internal medicine": 2
+  },
+  "bruising easily": {
+    "hematologist": 4,
+    "internal medicine": 2
+  },
+  "bunion": {
+    "podiatrist": 4,
+    "orthopedic": 3
+  },
+  "burning feet": {
+    "neurologist": 3,
+    "podiatrist": 2
+  },
+  "burning sensation": {
+    "neurologist": 3,
+    "dermatologist": 2
+  },
+  "burning urination": {
+    "urologist": 4
+  },
+  "buttock pain": {
+    "orthopedic": 3,
+    "neurologist": 2
+  },
+  "calf pain": {
+    "cardiologist": 3,
+    "orthopedic": 2
+  },
+  "calluses": {
+    "podiatrist": 3,
+    "dermatologist": 2
+  },
+  "canker sores": {
+    "dentist": 3,
+    "dermatologist": 2
+  },
+  "carpal tunnel": {
+    "orthopedic": 4,
+    "neurologist": 2
+  },
+  "cataracts": {
+    "ophthalmologist": 5
+  },
+  "cavity": {
+    "dentist": 5
+  },
+  "celiac disease symptoms": {
+    "gastroenterologist": 5
+  },
+  "cellulite": {
+    "dermatologist": 2
+  },
+  "chest congestion": {
+    "pulmonologist": 3,
+    "internal medicine": 2
   },
   "chest pain": {
     "cardiologist": 5
   },
+  "chest pain left side": {
+    "cardiologist": 5
+  },
+  "chest pain right side": {
+    "pulmonologist": 3,
+    "gastroenterologist": 2
+  },
   "chest pain spreading to arm": {
+    "cardiologist": 5
+  },
+  "chest pressure": {
     "cardiologist": 5
   },
   "chest tightness": {
     "pulmonologist": 3,
-    "cardiologist": 2
+    "cardiologist": 3
   },
-  "chronic cough": {
-    "pulmonologist": 4
+  "chills": {
+    "internal medicine": 3
   },
-  "chronic gas": {
-    "gastroenterologist": 2
+  "chlamydia symptoms": {
+    "urologist": 4,
+    "ob-gyn": 4
+  },
+  "cholesterol high": {
+    "cardiologist": 4,
+    "internal medicine": 2
+  },
+  "chronic fatigue": {
+    "internal medicine": 3,
+    "rheumatologist": 2
+  },
+  "chronic pain": {
+    "pain management": 4,
+    "internal medicine": 2
+  },
+  "circulation problems": {
+    "cardiologist": 4,
+    "vascular surgeon": 4
+  },
+  "cloudy urine": {
+    "urologist": 3
+  },
+  "cold feet": {
+    "cardiologist": 3,
+    "vascular surgeon": 3
+  },
+  "cold hands": {
+    "cardiologist": 2,
+    "rheumatologist": 2
+  },
+  "cold intolerance": {
+    "endocrinologist": 3
+  },
+  "cold sores": {
+    "dermatologist": 3,
+    "dentist": 2
+  },
+  "colic": {
+    "pediatrician": 4,
+    "gastroenterologist": 3
+  },
+  "concentration problems": {
+    "psychiatrist": 3,
+    "neurologist": 2
+  },
+  "confusion": {
+    "neurologist": 4,
+    "psychiatrist": 3
+  },
+  "congestion": {
+    "ent": 3,
+    "allergist": 2
+  },
+  "conjunctivitis": {
+    "ophthalmologist": 4
   },
   "constipation": {
-    "gastroenterologist": 3
+    "gastroenterologist": 3,
+    "internal medicine": 1
+  },
+  "constipation chronic": {
+    "gastroenterologist": 4
+  },
+  "coordination problems": {
+    "neurologist": 4
+  },
+  "copd symptoms": {
+    "pulmonologist": 5
+  },
+  "corns": {
+    "podiatrist": 3,
+    "dermatologist": 2
   },
   "cough": {
     "pulmonologist": 3,
     "internal medicine": 2
   },
+  "cough chronic": {
+    "pulmonologist": 4
+  },
+  "cough dry": {
+    "pulmonologist": 3,
+    "allergist": 2
+  },
+  "cough with blood": {
+    "pulmonologist": 5
+  },
+  "cough with phlegm": {
+    "pulmonologist": 4,
+    "internal medicine": 2
+  },
+  "cracked heels": {
+    "podiatrist": 2,
+    "dermatologist": 2
+  },
+  "cramps": {
+    "internal medicine": 2
+  },
+  "crohn's disease symptoms": {
+    "gastroenterologist": 5
+  },
+  "crying spells": {
+    "psychiatrist": 3,
+    "psychologist": 3
+  },
+  "cyst": {
+    "dermatologist": 4,
+    "general surgeon": 3
+  },
+  "dandruff": {
+    "dermatologist": 3
+  },
+  "dark circles under eyes": {
+    "dermatologist": 2,
+    "allergist": 1
+  },
+  "dark urine": {
+    "urologist": 4,
+    "internal medicine": 2
+  },
+  "deafness": {
+    "ent": 5
+  },
+  "dehydration": {
+    "internal medicine": 3
+  },
+  "delayed period": {
+    "ob-gyn": 4
+  },
+  "delusions": {
+    "psychiatrist": 5
+  },
+  "dengue symptoms": {
+    "infectious disease": 5,
+    "internal medicine": 3
+  },
+  "dental abscess": {
+    "dentist": 5
+  },
+  "dental pain": {
+    "dentist": 5
+  },
   "depression": {
     "psychiatrist": 4,
     "psychologist": 3
   },
-  "diabetes": {
-    "endocrinologist": 5
+  "dermatitis": {
+    "dermatologist": 4
+  },
+  "diabetes symptoms": {
+    "endocrinologist": 5,
+    "diabetologist": 5
+  },
+  "diabetic foot": {
+    "endocrinologist": 4,
+    "diabetologist": 5,
+    "podiatrist": 4
+  },
+  "diaper rash": {
+    "pediatrician": 3,
+    "dermatologist": 3
   },
   "diarrhea": {
     "gastroenterologist": 3,
+    "internal medicine": 2
+  },
+  "diarrhea chronic": {
+    "gastroenterologist": 4
+  },
+  "diarrhea with blood": {
+    "gastroenterologist": 5
+  },
+  "difficulty concentrating": {
+    "psychiatrist": 3,
+    "neurologist": 2
+  },
+  "difficulty sleeping": {
+    "psychiatrist": 3,
     "internal medicine": 1
   },
-  "difficulty breathing": {
-    "pulmonologist": 5
-  },
   "difficulty swallowing": {
-    "ent": 4
+    "ent": 4,
+    "gastroenterologist": 3
   },
   "difficulty urinating": {
     "urologist": 4
+  },
+  "discharge": {
+    "ob-gyn": 4,
+    "urologist": 4
+  },
+  "discolored teeth": {
+    "dentist": 3
+  },
+  "disorientation": {
+    "neurologist": 4,
+    "psychiatrist": 3
   },
   "dizziness": {
     "neurologist": 3,
     "ent": 3
   },
+  "dizziness when standing": {
+    "cardiologist": 3,
+    "neurologist": 2
+  },
   "double vision": {
     "ophthalmologist": 4,
     "neurologist": 3
   },
+  "drooling": {
+    "neurologist": 3,
+    "dentist": 2
+  },
+  "drooping eyelid": {
+    "ophthalmologist": 4,
+    "neurologist": 3
+  },
+  "dry cough": {
+    "pulmonologist": 3,
+    "allergist": 2
+  },
+  "dry eyes": {
+    "ophthalmologist": 3
+  },
+  "dry mouth": {
+    "dentist": 2,
+    "internal medicine": 1
+  },
+  "dry scalp": {
+    "dermatologist": 3
+  },
+  "dry skin": {
+    "dermatologist": 3
+  },
+  "ear discharge": {
+    "ent": 4
+  },
+  "ear infection": {
+    "ent": 4
+  },
   "ear pain": {
     "ent": 4
+  },
+  "ear pressure": {
+    "ent": 3
+  },
+  "ear ringing": {
+    "ent": 4
+  },
+  "earache": {
+    "ent": 4
+  },
+  "earwax buildup": {
+    "ent": 3
+  },
+  "eating disorder": {
+    "psychiatrist": 5,
+    "psychologist": 4
   },
   "eczema": {
     "dermatologist": 4
   },
+  "edema": {
+    "cardiologist": 4,
+    "nephrologist": 3,
+    "internal medicine": 2
+  },
+  "elbow pain": {
+    "orthopedic": 4
+  },
+  "elevated liver enzymes": {
+    "gastroenterologist": 4,
+    "internal medicine": 3
+  },
+  "emphysema": {
+    "pulmonologist": 5
+  },
+  "enlarged prostate": {
+    "urologist": 5
+  },
+  "epilepsy": {
+    "neurologist": 5
+  },
   "erectile dysfunction": {
-    "urologist": 4
+    "urologist": 4,
+    "endocrinologist": 2
+  },
+  "excessive bleeding": {
+    "hematologist": 5,
+    "ob-gyn": 4
+  },
+  "excessive sweating": {
+    "dermatologist": 3,
+    "endocrinologist": 2
+  },
+  "excessive thirst": {
+    "endocrinologist": 4,
+    "diabetologist": 4,
+    "internal medicine": 2
+  },
+  "excessive urination": {
+    "endocrinologist": 4,
+    "diabetologist": 4,
+    "urologist": 3
+  },
+  "exercise intolerance": {
+    "cardiologist": 4,
+    "pulmonologist": 3
+  },
+  "eye discharge": {
+    "ophthalmologist": 4
+  },
+  "eye dryness": {
+    "ophthalmologist": 3
+  },
+  "eye floaters": {
+    "ophthalmologist": 3
   },
   "eye infection": {
     "ophthalmologist": 4
   },
+  "eye inflammation": {
+    "ophthalmologist": 4
+  },
+  "eye itching": {
+    "ophthalmologist": 3,
+    "allergist": 2
+  },
   "eye pain": {
     "ophthalmologist": 4
   },
-  "facial drooping": {
+  "eye redness": {
+    "ophthalmologist": 3
+  },
+  "eye strain": {
+    "ophthalmologist": 3
+  },
+  "eye twitching": {
+    "ophthalmologist": 2,
+    "neurologist": 2
+  },
+  "eye watering": {
+    "ophthalmologist": 3
+  },
+  "eyelid swelling": {
+    "ophthalmologist": 4
+  },
+  "facial numbness": {
     "neurologist": 5
+  },
+  "facial pain": {
+    "neurologist": 4,
+    "dentist": 3
+  },
+  "facial paralysis": {
+    "neurologist": 5
+  },
+  "facial swelling": {
+    "allergist": 4,
+    "dentist": 3
+  },
+  "fainting": {
+    "cardiologist": 4,
+    "neurologist": 3
   },
   "fainting episodes": {
     "cardiologist": 4,
     "neurologist": 2
   },
+  "falls": {
+    "neurologist": 3,
+    "orthopedic": 2
+  },
+  "fast heart rate": {
+    "cardiologist": 4
+  },
   "fatigue": {
+    "internal medicine": 2,
+    "endocrinologist": 1
+  },
+  "fatigue chronic": {
+    "internal medicine": 3,
+    "rheumatologist": 2
+  },
+  "fear": {
+    "psychiatrist": 3,
+    "psychologist": 3
+  },
+  "feet numbness": {
+    "neurologist": 4,
+    "endocrinologist": 2,
+    "diabetologist": 3
+  },
+  "feet pain": {
+    "podiatrist": 4,
+    "orthopedic": 2
+  },
+  "feet swelling": {
+    "cardiologist": 3,
     "internal medicine": 2
   },
   "fertility issues": {
     "urologist": 3,
-    "ob-gyn": 3
+    "ob-gyn": 4
   },
   "fever": {
     "internal medicine": 3
   },
-  "floaters": {
+  "fever high": {
+    "internal medicine": 4
+  },
+  "fever recurring": {
+    "internal medicine": 4,
+    "infectious disease": 3
+  },
+  "fever with rash": {
+    "internal medicine": 4,
+    "dermatologist": 3
+  },
+  "fibromyalgia": {
+    "rheumatologist": 4,
+    "pain management": 3
+  },
+  "finger numbness": {
+    "neurologist": 4,
+    "orthopedic": 2
+  },
+  "finger pain": {
+    "orthopedic": 3,
+    "rheumatologist": 3
+  },
+  "finger stiffness": {
+    "rheumatologist": 4,
+    "orthopedic": 3
+  },
+  "flat feet": {
+    "podiatrist": 4,
+    "orthopedic": 3
+  },
+  "floaters in vision": {
     "ophthalmologist": 3
+  },
+  "flu symptoms": {
+    "internal medicine": 3
+  },
+  "fluid retention": {
+    "cardiologist": 4,
+    "nephrologist": 4,
+    "internal medicine": 2
+  },
+  "flushing": {
+    "dermatologist": 2,
+    "endocrinologist": 2
   },
   "food allergies": {
     "allergist": 4
   },
-  "frequent urination": {
-    "urologist": 3
+  "food intolerance": {
+    "gastroenterologist": 3,
+    "allergist": 3
   },
-  "fungal infections": {
+  "food poisoning": {
+    "gastroenterologist": 3,
+    "internal medicine": 2
+  },
+  "foot cramps": {
+    "neurologist": 2,
+    "podiatrist": 2
+  },
+  "foot odor": {
+    "podiatrist": 2,
+    "dermatologist": 2
+  },
+  "foot pain": {
+    "podiatrist": 4,
+    "orthopedic": 2
+  },
+  "forgetfulness": {
+    "neurologist": 3,
+    "psychiatrist": 2
+  },
+  "frequent colds": {
+    "allergist": 3,
+    "internal medicine": 2
+  },
+  "frequent infections": {
+    "immunologist": 4,
+    "internal medicine": 3
+  },
+  "frequent urination": {
+    "urologist": 3,
+    "endocrinologist": 2,
+    "diabetologist": 3
+  },
+  "frequent urination at night": {
+    "urologist": 4
+  },
+  "frigidity": {
+    "ob-gyn": 3,
+    "psychiatrist": 3
+  },
+  "frostbite": {
+    "dermatologist": 4,
+    "vascular surgeon": 3
+  },
+  "frozen shoulder": {
+    "orthopedic": 4,
+    "rheumatologist": 2
+  },
+  "fungal infection": {
     "dermatologist": 4
+  },
+  "gallbladder pain": {
+    "gastroenterologist": 5,
+    "general surgeon": 4
+  },
+  "gallstones": {
+    "gastroenterologist": 5,
+    "general surgeon": 4
+  },
+  "gangrene": {
+    "vascular surgeon": 5,
+    "infectious disease": 4
+  },
+  "gas": {
+    "gastroenterologist": 2
+  },
+  "gas excessive": {
+    "gastroenterologist": 3
+  },
+  "gastritis": {
+    "gastroenterologist": 4
+  },
+  "genital itching": {
+    "urologist": 4,
+    "ob-gyn": 4
+  },
+  "genital pain": {
+    "urologist": 4,
+    "ob-gyn": 4
+  },
+  "genital sores": {
+    "urologist": 5,
+    "ob-gyn": 5
+  },
+  "genital warts": {
+    "urologist": 4,
+    "ob-gyn": 4
+  },
+  "gerd symptoms": {
+    "gastroenterologist": 4
+  },
+  "glaucoma": {
+    "ophthalmologist": 5
+  },
+  "goiter": {
+    "endocrinologist": 5
+  },
+  "gonorrhea symptoms": {
+    "urologist": 5,
+    "ob-gyn": 5
+  },
+  "gout": {
+    "rheumatologist": 5
+  },
+  "gray hair premature": {
+    "dermatologist": 2,
+    "endocrinologist": 1
+  },
+  "grinding teeth": {
+    "dentist": 4
+  },
+  "groin lump": {
+    "general surgeon": 4,
+    "urologist": 3
   },
   "groin pain": {
     "urologist": 3,
     "orthopedic": 2
   },
+  "growing pains": {
+    "pediatrician": 3,
+    "orthopedic": 2
+  },
+  "growth delay": {
+    "pediatrician": 4,
+    "endocrinologist": 3
+  },
   "gum bleeding": {
     "dentist": 4
   },
+  "gum disease": {
+    "dentist": 5
+  },
+  "gum pain": {
+    "dentist": 4
+  },
+  "gum swelling": {
+    "dentist": 4
+  },
   "hair loss": {
+    "dermatologist": 4,
+    "endocrinologist": 2
+  },
+  "hair thinning": {
     "dermatologist": 4
+  },
+  "hallucinations": {
+    "psychiatrist": 5
+  },
+  "hammertoe": {
+    "podiatrist": 4,
+    "orthopedic": 3
+  },
+  "hand numbness": {
+    "neurologist": 4,
+    "orthopedic": 2
+  },
+  "hand pain": {
+    "orthopedic": 3,
+    "rheumatologist": 3
+  },
+  "hand tremor": {
+    "neurologist": 4
+  },
+  "hand weakness": {
+    "neurologist": 4
+  },
+  "hangover": {
+    "internal medicine": 1
   },
   "hay fever": {
     "allergist": 4,
+    "ent": 2
+  },
+  "head injury": {
+    "neurologist": 5,
+    "neurosurgeon": 5
+  },
+  "head lice": {
+    "dermatologist": 3,
+    "pediatrician": 3
+  },
+  "head pressure": {
+    "neurologist": 3,
     "ent": 2
   },
   "headache": {
     "neurologist": 3,
     "internal medicine": 1
   },
+  "headache chronic": {
+    "neurologist": 4
+  },
+  "headache cluster": {
+    "neurologist": 5
+  },
+  "headache migraine": {
+    "neurologist": 4
+  },
+  "headache severe": {
+    "neurologist": 5
+  },
+  "headache tension": {
+    "neurologist": 3,
+    "internal medicine": 1
+  },
   "hearing loss": {
     "ent": 4
   },
+  "hearing loss sudden": {
+    "ent": 5
+  },
+  "heart attack symptoms": {
+    "cardiologist": 5
+  },
+  "heart murmur": {
+    "cardiologist": 4
+  },
+  "heart palpitations": {
+    "cardiologist": 4
+  },
+  "heart racing": {
+    "cardiologist": 4
+  },
   "heartburn": {
-    "gastroenterologist": 3
+    "gastroenterologist": 3,
+    "internal medicine": 1
+  },
+  "heat exhaustion": {
+    "internal medicine": 4
+  },
+  "heat intolerance": {
+    "endocrinologist": 3
+  },
+  "heat rash": {
+    "dermatologist": 2
+  },
+  "heavy menstrual bleeding": {
+    "ob-gyn": 5
+  },
+  "heel pain": {
+    "podiatrist": 4,
+    "orthopedic": 3
+  },
+  "heel spurs": {
+    "podiatrist": 4,
+    "orthopedic": 3
+  },
+  "hematemesis": {
+    "gastroenterologist": 5
+  },
+  "hematuria": {
+    "urologist": 5,
+    "nephrologist": 4
+  },
+  "hemorrhoids": {
+    "gastroenterologist": 4,
+    "general surgeon": 3
+  },
+  "hepatitis symptoms": {
+    "gastroenterologist": 5,
+    "infectious disease": 4
+  },
+  "hernia": {
+    "general surgeon": 5
+  },
+  "herpes": {
+    "dermatologist": 4,
+    "infectious disease": 3
+  },
+  "hiccups": {
+    "internal medicine": 2
   },
   "high blood pressure": {
     "cardiologist": 4,
     "internal medicine": 2
+  },
+  "high cholesterol": {
+    "cardiologist": 4,
+    "internal medicine": 2
+  },
+  "hip bursitis": {
+    "orthopedic": 4
   },
   "hip pain": {
     "orthopedic": 4
@@ -179,123 +1117,768 @@
     "allergist": 3,
     "dermatologist": 2
   },
+  "hoarseness": {
+    "ent": 4
+  },
   "hormonal imbalance": {
     "endocrinologist": 4
+  },
+  "hot flashes": {
+    "ob-gyn": 4,
+    "endocrinologist": 3
+  },
+  "hunger excessive": {
+    "endocrinologist": 4,
+    "diabetologist": 4,
+    "internal medicine": 2
+  },
+  "hyperactivity": {
+    "psychiatrist": 4,
+    "pediatrician": 3
+  },
+  "hyperthyroidism": {
+    "endocrinologist": 5
+  },
+  "hyperventilation": {
+    "psychiatrist": 3,
+    "pulmonologist": 3
+  },
+  "hypoglycemia": {
+    "endocrinologist": 5,
+    "diabetologist": 5
+  },
+  "hypothyroidism": {
+    "endocrinologist": 5
+  },
+  "ibs symptoms": {
+    "gastroenterologist": 4
+  },
+  "impotence": {
+    "urologist": 4
+  },
+  "indigestion": {
+    "gastroenterologist": 3,
+    "internal medicine": 1
+  },
+  "infection": {
+    "internal medicine": 3,
+    "infectious disease": 3
+  },
+  "infertility": {
+    "ob-gyn": 5,
+    "urologist": 5
+  },
+  "inflammation": {
+    "rheumatologist": 3,
+    "internal medicine": 2
+  },
+  "ingrown toenail": {
+    "podiatrist": 4,
+    "dermatologist": 3
+  },
+  "insect bites": {
+    "dermatologist": 2,
+    "allergist": 2
   },
   "insomnia": {
     "psychiatrist": 3,
     "internal medicine": 1
   },
+  "insulin resistance": {
+    "endocrinologist": 5,
+    "diabetologist": 5
+  },
+  "interrupted sleep": {
+    "psychiatrist": 3,
+    "pulmonologist": 2
+  },
+  "irregular heartbeat": {
+    "cardiologist": 5
+  },
   "irregular periods": {
     "ob-gyn": 4
   },
-  "itchy skin": {
+  "irritability": {
+    "psychiatrist": 3,
+    "internal medicine": 1
+  },
+  "irritable bowel": {
+    "gastroenterologist": 4
+  },
+  "itching": {
+    "dermatologist": 3,
+    "allergist": 2
+  },
+  "itchy eyes": {
+    "ophthalmologist": 3,
+    "allergist": 3
+  },
+  "itchy scalp": {
     "dermatologist": 3
+  },
+  "itchy skin": {
+    "dermatologist": 3,
+    "allergist": 2
+  },
+  "jaundice": {
+    "gastroenterologist": 5,
+    "internal medicine": 3
+  },
+  "jaw clicking": {
+    "dentist": 4,
+    "ent": 2
+  },
+  "jaw locking": {
+    "dentist": 4
   },
   "jaw pain": {
     "dentist": 3,
     "ent": 2
   },
+  "joint pain": {
+    "rheumatologist": 4,
+    "orthopedic": 3
+  },
+  "joint stiffness": {
+    "rheumatologist": 4,
+    "orthopedic": 2
+  },
   "joint swelling": {
     "orthopedic": 3,
     "rheumatologist": 3
   },
+  "kidney infection": {
+    "urologist": 5,
+    "nephrologist": 5,
+    "internal medicine": 3
+  },
+  "kidney pain": {
+    "urologist": 5,
+    "nephrologist": 5,
+    "internal medicine": 3
+  },
   "kidney stones": {
-    "urologist": 5
+    "urologist": 5,
+    "nephrologist": 4
+  },
+  "knee buckling": {
+    "orthopedic": 4
+  },
+  "knee locking": {
+    "orthopedic": 4
   },
   "knee pain": {
     "orthopedic": 4
   },
+  "knee swelling": {
+    "orthopedic": 4,
+    "rheumatologist": 2
+  },
+  "lactose intolerance": {
+    "gastroenterologist": 3,
+    "allergist": 2
+  },
+  "laryngitis": {
+    "ent": 4
+  },
+  "leg cramps": {
+    "neurologist": 3,
+    "vascular surgeon": 2
+  },
+  "leg numbness": {
+    "neurologist": 4,
+    "vascular surgeon": 3
+  },
+  "leg pain": {
+    "vascular surgeon": 3,
+    "orthopedic": 3
+  },
+  "leg swelling": {
+    "cardiologist": 4,
+    "vascular surgeon": 3
+  },
+  "leg ulcers": {
+    "vascular surgeon": 5,
+    "dermatologist": 3
+  },
+  "leg weakness": {
+    "neurologist": 4,
+    "vascular surgeon": 2
+  },
+  "leptospirosis symptoms": {
+    "infectious disease": 5,
+    "internal medicine": 3
+  },
+  "lethargy": {
+    "internal medicine": 2
+  },
+  "leukemia symptoms": {
+    "hematologist": 5,
+    "oncologist": 5
+  },
+  "libido loss": {
+    "endocrinologist": 3,
+    "psychiatrist": 3
+  },
+  "lightheadedness": {
+    "cardiologist": 3,
+    "neurologist": 2
+  },
+  "limping": {
+    "orthopedic": 4,
+    "neurologist": 2
+  },
+  "lip swelling": {
+    "allergist": 4,
+    "dermatologist": 2
+  },
+  "liver disease symptoms": {
+    "gastroenterologist": 5
+  },
+  "lockjaw": {
+    "dentist": 4,
+    "neurologist": 3
+  },
   "loss of appetite": {
     "internal medicine": 2,
-    "gastroenterologist": 1
+    "gastroenterologist": 2
   },
   "loss of balance": {
     "neurologist": 4,
     "ent": 2
   },
-  "memory issues": {
+  "loss of consciousness": {
+    "neurologist": 5,
+    "cardiologist": 4
+  },
+  "loss of smell": {
+    "ent": 4,
+    "neurologist": 2
+  },
+  "loss of taste": {
+    "ent": 4,
+    "neurologist": 2
+  },
+  "low back pain": {
+    "orthopedic": 4,
+    "neurologist": 2
+  },
+  "low blood pressure": {
+    "cardiologist": 3,
+    "internal medicine": 2
+  },
+  "low libido": {
+    "endocrinologist": 3,
+    "psychiatrist": 3
+  },
+  "lump in breast": {
+    "ob-gyn": 5,
+    "oncologist": 4
+  },
+  "lump in neck": {
+    "ent": 4,
+    "oncologist": 3
+  },
+  "lump in throat": {
+    "ent": 4
+  },
+  "lung cancer symptoms": {
+    "pulmonologist": 5,
+    "oncologist": 5
+  },
+  "lupus symptoms": {
+    "rheumatologist": 5
+  },
+  "lyme disease": {
+    "infectious disease": 5,
+    "rheumatologist": 3
+  },
+  "lymph node swelling": {
+    "internal medicine": 4,
+    "oncologist": 3
+  },
+  "macular degeneration": {
+    "ophthalmologist": 5
+  },
+  "malaria symptoms": {
+    "infectious disease": 5,
+    "internal medicine": 3
+  },
+  "malnutrition": {
+    "internal medicine": 4,
+    "nutritionist": 3
+  },
+  "measles": {
+    "pediatrician": 4,
+    "infectious disease": 3
+  },
+  "medication side effects": {
+    "internal medicine": 3
+  },
+  "melanoma": {
+    "dermatologist": 5,
+    "oncologist": 5
+  },
+  "memory loss": {
+    "neurologist": 4,
+    "psychiatrist": 2
+  },
+  "memory problems": {
     "neurologist": 4
   },
-  "menopause issues": {
+  "meningitis symptoms": {
+    "neurologist": 5,
+    "infectious disease": 5
+  },
+  "menopause symptoms": {
     "ob-gyn": 4
   },
   "menstrual cramps": {
     "ob-gyn": 3
   },
+  "menstrual irregularities": {
+    "ob-gyn": 4
+  },
+  "mental confusion": {
+    "neurologist": 4,
+    "psychiatrist": 3
+  },
   "migraine": {
     "neurologist": 4
+  },
+  "migraine with aura": {
+    "neurologist": 5
+  },
+  "miscarriage symptoms": {
+    "ob-gyn": 5
   },
   "moles": {
     "dermatologist": 4
   },
+  "mononucleosis": {
+    "internal medicine": 4,
+    "infectious disease": 3
+  },
+  "mood changes": {
+    "psychiatrist": 3,
+    "endocrinologist": 2
+  },
   "mood swings": {
     "psychiatrist": 3
+  },
+  "morning sickness": {
+    "ob-gyn": 4
+  },
+  "motion sickness": {
+    "ent": 2,
+    "neurologist": 2
+  },
+  "mouth breathing": {
+    "ent": 3,
+    "dentist": 2
+  },
+  "mouth pain": {
+    "dentist": 4
+  },
+  "mouth sores": {
+    "dentist": 4,
+    "dermatologist": 2
+  },
+  "mouth ulcers": {
+    "dentist": 4
+  },
+  "mucus in stool": {
+    "gastroenterologist": 4
+  },
+  "multiple sclerosis symptoms": {
+    "neurologist": 5
+  },
+  "mumps": {
+    "pediatrician": 4,
+    "infectious disease": 3
+  },
+  "muscle aches": {
+    "internal medicine": 2,
+    "rheumatologist": 2
+  },
+  "muscle cramps": {
+    "internal medicine": 2,
+    "neurologist": 2
   },
   "muscle pain": {
     "orthopedic": 2,
     "internal medicine": 1
   },
+  "muscle spasms": {
+    "neurologist": 3,
+    "orthopedic": 2
+  },
+  "muscle stiffness": {
+    "rheumatologist": 3,
+    "neurologist": 2
+  },
+  "muscle twitching": {
+    "neurologist": 3
+  },
+  "muscle weakness": {
+    "neurologist": 4,
+    "rheumatologist": 2
+  },
+  "nail fungus": {
+    "dermatologist": 4,
+    "podiatrist": 3
+  },
+  "nail problems": {
+    "dermatologist": 3
+  },
   "nasal congestion": {
+    "ent": 3,
+    "allergist": 2
+  },
+  "nasal discharge": {
     "ent": 3
+  },
+  "nasal polyps": {
+    "ent": 4
   },
   "nausea": {
     "gastroenterologist": 2,
     "internal medicine": 1
   },
+  "nausea and vomiting": {
+    "gastroenterologist": 3,
+    "internal medicine": 2
+  },
+  "neck lump": {
+    "ent": 4,
+    "oncologist": 3
+  },
   "neck pain": {
     "orthopedic": 3,
     "neurologist": 2
   },
+  "neck stiffness": {
+    "neurologist": 4,
+    "orthopedic": 2
+  },
+  "nerve damage": {
+    "neurologist": 5
+  },
+  "nerve pain": {
+    "neurologist": 4,
+    "pain management": 3
+  },
+  "nervousness": {
+    "psychiatrist": 3,
+    "psychologist": 3
+  },
+  "night blindness": {
+    "ophthalmologist": 4
+  },
   "night sweats": {
-    "internal medicine": 3
+    "internal medicine": 3,
+    "oncologist": 2
+  },
+  "nightmares": {
+    "psychiatrist": 3,
+    "psychologist": 2
+  },
+  "nipple discharge": {
+    "ob-gyn": 5
+  },
+  "nipple pain": {
+    "ob-gyn": 4
   },
   "nosebleeds": {
     "ent": 3
   },
+  "numbness": {
+    "neurologist": 4
+  },
+  "numbness in extremities": {
+    "neurologist": 4
+  },
   "numbness or tingling": {
     "neurologist": 4
   },
+  "obesity": {
+    "endocrinologist": 3,
+    "internal medicine": 2
+  },
+  "obsessive thoughts": {
+    "psychiatrist": 4,
+    "psychologist": 3
+  },
+  "ocd symptoms": {
+    "psychiatrist": 5
+  },
+  "osteoarthritis": {
+    "rheumatologist": 4,
+    "orthopedic": 3
+  },
+  "osteoporosis": {
+    "rheumatologist": 5,
+    "endocrinologist": 3
+  },
+  "ovarian cyst": {
+    "ob-gyn": 5
+  },
+  "pain during intercourse": {
+    "ob-gyn": 4,
+    "urologist": 3
+  },
   "pain when urinating": {
     "urologist": 4
+  },
+  "painful periods": {
+    "ob-gyn": 4
+  },
+  "pale skin": {
+    "internal medicine": 3,
+    "hematologist": 2
   },
   "palpitations": {
     "cardiologist": 4
   },
   "panic attacks": {
-    "psychiatrist": 4
+    "psychiatrist": 4,
+    "psychologist": 3
+  },
+  "paralysis": {
+    "neurologist": 5
+  },
+  "paranoia": {
+    "psychiatrist": 5
+  },
+  "parkinson's symptoms": {
+    "neurologist": 5
   },
   "pcos": {
     "ob-gyn": 4,
     "endocrinologist": 2
   },
+  "pelvic inflammatory disease": {
+    "ob-gyn": 5
+  },
   "pelvic pain": {
-    "ob-gyn": 4
+    "ob-gyn": 4,
+    "urologist": 2
+  },
+  "penile discharge": {
+    "urologist": 5
+  },
+  "penile pain": {
+    "urologist": 5
+  },
+  "peripheral neuropathy": {
+    "neurologist": 5
+  },
+  "persistent cough": {
+    "pulmonologist": 4,
+    "internal medicine": 2
+  },
+  "persistent fever": {
+    "internal medicine": 4,
+    "infectious disease": 3
+  },
+  "phlegm": {
+    "pulmonologist": 3,
+    "ent": 2
+  },
+  "phobia": {
+    "psychiatrist": 4,
+    "psychologist": 4
+  },
+  "pink eye": {
+    "ophthalmologist": 4
+  },
+  "plantar fasciitis": {
+    "podiatrist": 5,
+    "orthopedic": 3
+  },
+  "pneumonia symptoms": {
+    "pulmonologist": 5,
+    "internal medicine": 3
+  },
+  "polycystic ovary": {
+    "ob-gyn": 5,
+    "endocrinologist": 3
+  },
+  "polyuria": {
+    "endocrinologist": 4,
+    "diabetologist": 4,
+    "urologist": 3
+  },
+  "poor appetite": {
+    "internal medicine": 2,
+    "gastroenterologist": 2
+  },
+  "poor circulation": {
+    "cardiologist": 4,
+    "vascular surgeon": 4
+  },
+  "poor concentration": {
+    "psychiatrist": 3,
+    "neurologist": 2
+  },
+  "postnasal drip": {
+    "ent": 4,
+    "allergist": 3
+  },
+  "postpartum depression": {
+    "psychiatrist": 5,
+    "ob-gyn": 3
+  },
+  "pregnancy complications": {
+    "ob-gyn": 5
   },
   "pregnancy concerns": {
     "ob-gyn": 5
   },
+  "pregnancy symptoms": {
+    "ob-gyn": 4
+  },
+  "premature ejaculation": {
+    "urologist": 4,
+    "psychiatrist": 2
+  },
+  "premenstrual syndrome": {
+    "ob-gyn": 4
+  },
+  "pressure in head": {
+    "neurologist": 3,
+    "ent": 2
+  },
+  "prostate cancer symptoms": {
+    "urologist": 5,
+    "oncologist": 5
+  },
+  "prostate enlargement": {
+    "urologist": 5
+  },
   "prostate problems": {
     "urologist": 5
   },
+  "prostatitis": {
+    "urologist": 5
+  },
   "psoriasis": {
-    "dermatologist": 4
+    "dermatologist": 4,
+    "rheumatologist": 2
+  },
+  "ptsd symptoms": {
+    "psychiatrist": 5,
+    "psychologist": 4
+  },
+  "puberty delay": {
+    "endocrinologist": 5,
+    "pediatrician": 3
+  },
+  "pulmonary embolism symptoms": {
+    "pulmonologist": 5,
+    "cardiologist": 4
+  },
+  "pulse irregular": {
+    "cardiologist": 5
+  },
+  "pus": {
+    "general surgeon": 4,
+    "dermatologist": 3
+  },
+  "racing heart": {
+    "cardiologist": 4
+  },
+  "rash": {
+    "dermatologist": 4,
+    "allergist": 2
+  },
+  "rash with fever": {
+    "internal medicine": 4,
+    "dermatologist": 3
   },
   "rashes": {
     "dermatologist": 4
   },
+  "raynaud's phenomenon": {
+    "rheumatologist": 4,
+    "vascular surgeon": 3
+  },
+  "rectal bleeding": {
+    "gastroenterologist": 5
+  },
+  "rectal pain": {
+    "gastroenterologist": 4
+  },
+  "recurring infections": {
+    "immunologist": 4,
+    "internal medicine": 3
+  },
   "red eyes": {
     "ophthalmologist": 3
   },
+  "reflux": {
+    "gastroenterologist": 4
+  },
+  "restless leg syndrome": {
+    "neurologist": 4
+  },
+  "rheumatoid arthritis": {
+    "rheumatologist": 5
+  },
+  "rib pain": {
+    "orthopedic": 3,
+    "pulmonologist": 2
+  },
   "ringing in ears": {
     "ent": 4
+  },
+  "ringworm": {
+    "dermatologist": 4
+  },
+  "rosacea": {
+    "dermatologist": 4
   },
   "runny nose": {
     "ent": 2,
     "allergist": 2
   },
-  "scalp issues": {
+  "ruptured eardrum": {
+    "ent": 5
+  },
+  "salivation excessive": {
+    "dentist": 3,
+    "neurologist": 2
+  },
+  "scabies": {
+    "dermatologist": 4
+  },
+  "scalp itching": {
     "dermatologist": 3
+  },
+  "scalp pain": {
+    "dermatologist": 3,
+    "neurologist": 2
+  },
+  "scar tissue": {
+    "dermatologist": 3,
+    "plastic surgeon": 3
+  },
+  "schizophrenia symptoms": {
+    "psychiatrist": 5
+  },
+  "sciatica": {
+    "neurologist": 4,
+    "orthopedic": 3
+  },
+  "scoliosis": {
+    "orthopedic": 5
+  },
+  "seasonal allergies": {
+    "allergist": 4,
+    "ent": 2
+  },
+  "seborrheic dermatitis": {
+    "dermatologist": 4
   },
   "seizures": {
     "neurologist": 5
@@ -304,95 +1887,681 @@
     "ophthalmologist": 3,
     "neurologist": 1
   },
+  "sensitivity to sound": {
+    "ent": 3,
+    "neurologist": 2
+  },
+  "sexual dysfunction": {
+    "urologist": 4,
+    "psychiatrist": 3
+  },
+  "sexually transmitted disease": {
+    "urologist": 5,
+    "ob-gyn": 5
+  },
+  "shingles": {
+    "dermatologist": 5,
+    "neurologist": 3
+  },
+  "shin splints": {
+    "orthopedic": 4,
+    "sports medicine": 4
+  },
+  "shivering": {
+    "internal medicine": 2
+  },
   "shortness of breath": {
-    "pulmonologist": 4
+    "pulmonologist": 4,
+    "cardiologist": 3
   },
   "shortness of breath on exertion": {
     "cardiologist": 4,
     "pulmonologist": 2
   },
+  "shoulder bursitis": {
+    "orthopedic": 4
+  },
+  "shoulder dislocation": {
+    "orthopedic": 5
+  },
   "shoulder pain": {
     "orthopedic": 4
+  },
+  "sinus congestion": {
+    "ent": 4,
+    "allergist": 2
+  },
+  "sinus headache": {
+    "ent": 4
+  },
+  "sinus infection": {
+    "ent": 4
   },
   "sinus pain": {
     "ent": 4
   },
-  "skin allergies": {
-    "dermatologist": 3,
+  "sinus pressure": {
+    "ent": 4,
     "allergist": 2
+  },
+  "sinusitis": {
+    "ent": 4
+  },
+  "skin cancer": {
+    "dermatologist": 5,
+    "oncologist": 5
+  },
+  "skin discoloration": {
+    "dermatologist": 3
+  },
+  "skin infection": {
+    "dermatologist": 4
+  },
+  "skin irritation": {
+    "dermatologist": 3
+  },
+  "skin lesions": {
+    "dermatologist": 4
+  },
+  "skin rash": {
+    "dermatologist": 4,
+    "allergist": 2
+  },
+  "skin tags": {
+    "dermatologist": 3
+  },
+  "sleep apnea": {
+    "pulmonologist": 5,
+    "ent": 4
+  },
+  "sleep disorders": {
+    "pulmonologist": 4,
+    "psychiatrist": 3
+  },
+  "sleep problems": {
+    "psychiatrist": 3,
+    "pulmonologist": 2
+  },
+  "sleepiness": {
+    "pulmonologist": 3,
+    "internal medicine": 2
+  },
+  "sleepwalking": {
+    "neurologist": 4,
+    "psychiatrist": 3
+  },
+  "slipped disc": {
+    "neurosurgeon": 5,
+    "orthopedic": 4
   },
   "slurred speech": {
     "neurologist": 5
+  },
+  "smell loss": {
+    "ent": 4,
+    "neurologist": 2
   },
   "sneezing": {
     "allergist": 2,
     "ent": 2
   },
+  "snoring": {
+    "ent": 4,
+    "pulmonologist": 3
+  },
+  "sore muscles": {
+    "internal medicine": 2,
+    "orthopedic": 2
+  },
   "sore throat": {
     "ent": 3,
     "internal medicine": 1
+  },
+  "sore tongue": {
+    "dentist": 3,
+    "ent": 2
+  },
+  "speech difficulties": {
+    "neurologist": 5,
+    "ent": 2
+  },
+  "speech problems": {
+    "neurologist": 4,
+    "ent": 2
+  },
+  "spider veins": {
+    "vascular surgeon": 4,
+    "dermatologist": 3
+  },
+  "spinal stenosis": {
+    "neurosurgeon": 5,
+    "orthopedic": 4
+  },
+  "spine curvature": {
+    "orthopedic": 5
+  },
+  "sports injury": {
+    "sports medicine": 5,
+    "orthopedic": 4
+  },
+  "spotting": {
+    "ob-gyn": 4
+  },
+  "sprain": {
+    "orthopedic": 4
+  },
+  "stammering": {
+    "ent": 3,
+    "neurologist": 2
+  },
+  "stiff joints": {
+    "rheumatologist": 4,
+    "orthopedic": 2
+  },
+  "stiff neck": {
+    "neurologist": 4,
+    "orthopedic": 2
+  },
+  "stomach ache": {
+    "gastroenterologist": 3,
+    "internal medicine": 2
+  },
+  "stomach bloating": {
+    "gastroenterologist": 3
+  },
+  "stomach cramps": {
+    "gastroenterologist": 3,
+    "internal medicine": 2
+  },
+  "stomach flu": {
+    "gastroenterologist": 3,
+    "internal medicine": 2
   },
   "stomach pain": {
     "gastroenterologist": 3,
     "internal medicine": 1
   },
+  "stomach ulcer": {
+    "gastroenterologist": 5
+  },
+  "stool changes": {
+    "gastroenterologist": 4
+  },
   "stress": {
     "psychologist": 3,
     "psychiatrist": 2
   },
-  "sudden vision loss": {
-    "ophthalmologist": 5
+  "stretch marks": {
+    "dermatologist": 2
+  },
+  "stroke symptoms": {
+    "neurologist": 5
+  },
+  "stuffy nose": {
+    "ent": 3,
+    "allergist": 2
+  },
+  "stuttering": {
+    "ent": 3,
+    "neurologist": 2
+  },
+  "stye": {
+    "ophthalmologist": 4
+  },
+  "suicidal thoughts": {
+    "psychiatrist": 5
+  },
+  "sunburn": {
+    "dermatologist": 2
+  },
+  "surgical consultation": {
+    "general surgeon": 5
+  },
+  "sweating excessive": {
+    "dermatologist": 3,
+    "endocrinologist": 2
+  },
+  "swelling": {
+    "internal medicine": 2
+  },
+  "swelling in legs": {
+    "cardiologist": 4,
+    "vascular surgeon": 3
+  },
+  "swollen ankles": {
+    "cardiologist": 3,
+    "internal medicine": 2
+  },
+  "swollen feet": {
+    "cardiologist": 3,
+    "internal medicine": 2
   },
   "swollen glands": {
-    "internal medicine": 3
+    "internal medicine": 3,
+    "ent": 2
+  },
+  "swollen joints": {
+    "rheumatologist": 4,
+    "orthopedic": 3
   },
   "swollen legs": {
     "cardiologist": 3,
     "internal medicine": 2
   },
+  "swollen lymph nodes": {
+    "internal medicine": 4,
+    "oncologist": 2
+  },
+  "swollen tongue": {
+    "allergist": 5,
+    "dentist": 3
+  },
+  "swollen tonsils": {
+    "ent": 4
+  },
+  "syphilis symptoms": {
+    "urologist": 5,
+    "infectious disease": 4
+  },
+  "tachycardia": {
+    "cardiologist": 5
+  },
+  "tartar buildup": {
+    "dentist": 4
+  },
+  "taste changes": {
+    "ent": 3,
+    "neurologist": 2
+  },
+  "tb symptoms": {
+    "pulmonologist": 5,
+    "infectious disease": 5
+  },
+  "teeth grinding": {
+    "dentist": 4
+  },
+  "teeth sensitivity": {
+    "dentist": 4
+  },
+  "tendonitis": {
+    "orthopedic": 4,
+    "sports medicine": 3
+  },
+  "tennis elbow": {
+    "orthopedic": 4,
+    "sports medicine": 3
+  },
+  "tension headache": {
+    "neurologist": 3,
+    "internal medicine": 1
+  },
+  "testicular lump": {
+    "urologist": 5,
+    "oncologist": 4
+  },
   "testicular pain": {
     "urologist": 5
+  },
+  "testicular swelling": {
+    "urologist": 5
+  },
+  "throat clearing": {
+    "ent": 3
+  },
+  "throat pain": {
+    "ent": 4
+  },
+  "thrombosis": {
+    "hematologist": 5,
+    "vascular surgeon": 5
+  },
+  "thyroid disease": {
+    "endocrinologist": 5
+  },
+  "thyroid nodules": {
+    "endocrinologist": 5
   },
   "thyroid problems": {
     "endocrinologist": 5
   },
+  "tics": {
+    "neurologist": 4,
+    "psychiatrist": 3
+  },
+  "tingling": {
+    "neurologist": 4
+  },
+  "tingling hands": {
+    "neurologist": 4,
+    "orthopedic": 2
+  },
+  "tingling in feet": {
+    "neurologist": 4,
+    "endocrinologist": 2,
+    "diabetologist": 3
+  },
+  "tinnitus": {
+    "ent": 4
+  },
+  "tmj disorder": {
+    "dentist": 5,
+    "ent": 3
+  },
+  "toe numbness": {
+    "neurologist": 4,
+    "podiatrist": 2
+  },
+  "toe pain": {
+    "podiatrist": 4,
+    "orthopedic": 2
+  },
+  "toenail fungus": {
+    "podiatrist": 4,
+    "dermatologist": 3
+  },
+  "tongue pain": {
+    "dentist": 4,
+    "ent": 2
+  },
+  "tongue sores": {
+    "dentist": 4
+  },
+  "tongue swelling": {
+    "allergist": 5,
+    "dentist": 3
+  },
+  "tonsillitis": {
+    "ent": 5
+  },
+  "tooth abscess": {
+    "dentist": 5
+  },
+  "tooth decay": {
+    "dentist": 5
+  },
+  "tooth infection": {
+    "dentist": 5
+  },
+  "tooth pain": {
+    "dentist": 5
+  },
+  "tooth sensitivity": {
+    "dentist": 4
+  },
   "toothache": {
     "dentist": 5
   },
-  "trauma symptoms": {
+  "tourette syndrome": {
+    "neurologist": 5,
+    "psychiatrist": 3
+  },
+  "trauma": {
     "psychiatrist": 4,
     "psychologist": 4
   },
+  "trembling": {
+    "neurologist": 4
+  },
+  "tremor": {
+    "neurologist": 4
+  },
   "tremors": {
     "neurologist": 4
+  },
+  "tropical fever": {
+    "infectious disease": 5,
+    "internal medicine": 3
+  },
+  "tuberculosis symptoms": {
+    "pulmonologist": 5,
+    "infectious disease": 5
+  },
+  "tunnel vision": {
+    "ophthalmologist": 5,
+    "neurologist": 3
+  },
+  "typhoid symptoms": {
+    "infectious disease": 5,
+    "internal medicine": 3
+  },
+  "ulcer": {
+    "gastroenterologist": 5
+  },
+  "ulcerative colitis": {
+    "gastroenterologist": 5
+  },
+  "ulcers in mouth": {
+    "dentist": 4
+  },
+  "unconsciousness": {
+    "neurologist": 5
+  },
+  "underweight": {
+    "internal medicine": 3,
+    "nutritionist": 2
+  },
+  "unexplained bruising": {
+    "hematologist": 4,
+    "internal medicine": 2
+  },
+  "unexplained weight gain": {
+    "endocrinologist": 4,
+    "internal medicine": 2
+  },
+  "unexplained weight loss": {
+    "internal medicine": 4,
+    "oncologist": 3
+  },
+  "upper back pain": {
+    "orthopedic": 3,
+    "pulmonologist": 1
+  },
+  "urethritis": {
+    "urologist": 5
+  },
+  "urgent urination": {
+    "urologist": 4
+  },
+  "urinary frequency": {
+    "urologist": 4,
+    "endocrinologist": 2,
+    "diabetologist": 3
+  },
+  "urinary incontinence": {
+    "urologist": 5
   },
   "urinary infection": {
     "urologist": 4,
     "internal medicine": 2
   },
+  "urinary retention": {
+    "urologist": 5
+  },
+  "urinary tract infection": {
+    "urologist": 4,
+    "internal medicine": 2
+  },
+  "urination burning": {
+    "urologist": 4
+  },
+  "urination painful": {
+    "urologist": 4
+  },
+  "urine blood": {
+    "urologist": 5,
+    "nephrologist": 4
+  },
+  "urine cloudy": {
+    "urologist": 3
+  },
+  "urine dark": {
+    "urologist": 4,
+    "internal medicine": 2
+  },
+  "urine foul smelling": {
+    "urologist": 3
+  },
+  "uterine bleeding": {
+    "ob-gyn": 5
+  },
+  "uterine fibroids": {
+    "ob-gyn": 5
+  },
+  "uti symptoms": {
+    "urologist": 4,
+    "internal medicine": 2
+  },
+  "vaccination": {
+    "family medicine": 4,
+    "pediatrician": 4
+  },
+  "vaginal bleeding": {
+    "ob-gyn": 5
+  },
   "vaginal discharge": {
     "ob-gyn": 4
+  },
+  "vaginal dryness": {
+    "ob-gyn": 4
+  },
+  "vaginal infection": {
+    "ob-gyn": 5
+  },
+  "vaginal itching": {
+    "ob-gyn": 4
+  },
+  "vaginal odor": {
+    "ob-gyn": 4
+  },
+  "vaginal pain": {
+    "ob-gyn": 4
+  },
+  "vaginitis": {
+    "ob-gyn": 5
+  },
+  "varicose veins": {
+    "vascular surgeon": 5,
+    "dermatologist": 2
+  },
+  "vascular disease": {
+    "vascular surgeon": 5,
+    "cardiologist": 3
   },
   "vertigo": {
     "ent": 4,
     "neurologist": 2
   },
+  "vision blurred": {
+    "ophthalmologist": 3,
+    "neurologist": 1
+  },
+  "vision changes": {
+    "ophthalmologist": 4,
+    "neurologist": 2
+  },
+  "vision disturbances": {
+    "ophthalmologist": 4,
+    "neurologist": 2
+  },
+  "vision double": {
+    "ophthalmologist": 4,
+    "neurologist": 3
+  },
+  "vision loss": {
+    "ophthalmologist": 5
+  },
+  "vision problems": {
+    "ophthalmologist": 4
+  },
+  "vitiligo": {
+    "dermatologist": 4
+  },
+  "voice hoarseness": {
+    "ent": 4
+  },
+  "voice loss": {
+    "ent": 5
+  },
   "vomiting": {
     "gastroenterologist": 3,
     "internal medicine": 2
   },
+  "vomiting blood": {
+    "gastroenterologist": 5
+  },
+  "vulvar pain": {
+    "ob-gyn": 5
+  },
+  "walking difficulty": {
+    "neurologist": 4,
+    "orthopedic": 3
+  },
+  "warts": {
+    "dermatologist": 4,
+    "podiatrist": 3
+  },
+  "watery eyes": {
+    "ophthalmologist": 3
+  },
   "weakness": {
-    "internal medicine": 2
+    "internal medicine": 2,
+    "neurologist": 2
+  },
+  "weakness in arms": {
+    "neurologist": 4
+  },
+  "weakness in legs": {
+    "neurologist": 4
+  },
+  "weight changes": {
+    "internal medicine": 3,
+    "endocrinologist": 2
   },
   "weight gain": {
     "internal medicine": 2,
     "endocrinologist": 2
   },
+  "weight gain rapid": {
+    "endocrinologist": 4,
+    "cardiologist": 2
+  },
   "weight loss": {
     "internal medicine": 3,
     "endocrinologist": 2
   },
+  "weight loss rapid": {
+    "internal medicine": 4,
+    "oncologist": 3
+  },
   "wheezing": {
-    "pulmonologist": 4
+    "pulmonologist": 4,
+    "allergist": 2
+  },
+  "whooping cough": {
+    "pulmonologist": 5,
+    "pediatrician": 4
+  },
+  "wisdom tooth pain": {
+    "dentist": 5
+  },
+  "withdrawal symptoms": {
+    "psychiatrist": 5,
+    "internal medicine": 3
+  },
+  "wrist pain": {
+    "orthopedic": 4,
+    "rheumatologist": 2
+  },
+  "yellow eyes": {
+    "gastroenterologist": 5,
+    "internal medicine": 3
+  },
+  "yellow skin": {
+    "gastroenterologist": 5,
+    "internal medicine": 3
+  },
+  "yeast infection": {
+    "ob-gyn": 5,
+    "dermatologist": 3
   }
 }
