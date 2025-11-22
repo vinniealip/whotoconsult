@@ -1,161 +1,37 @@
 {
-  "headache": {
-    "neurologist": 3,
-    "internal medicine": 1
-  },
-  "migraine": {
-    "neurologist": 4
-  },
-  "dizziness": {
-    "neurologist": 3,
-    "ent": 3
-  },
-  "vertigo": {
-    "ent": 4,
-    "neurologist": 2
-  },
-  "numbness or tingling": {
-    "neurologist": 4
-  },
-  "tremors": {
-    "neurologist": 4
-  },
-  "memory issues": {
-    "neurologist": 4
-  },
-  "seizures": {
-    "neurologist": 5
-  },
-  "facial drooping": {
-    "neurologist": 5
-  },
-  "slurred speech": {
-    "neurologist": 5
-  },
-  "loss of balance": {
-    "neurologist": 4,
-    "ent": 2
-  },
-  "blurred vision": {
-    "ophthalmologist": 3,
-    "neurologist": 1
-  },
-  "eye pain": {
-    "ophthalmologist": 4
-  },
-  "red eyes": {
-    "ophthalmologist": 3
-  },
-  "sensitivity to light": {
-    "ophthalmologist": 3,
-    "neurologist": 1
-  },
-  "double vision": {
-    "ophthalmologist": 4,
-    "neurologist": 3
-  },
-  "sudden vision loss": {
-    "ophthalmologist": 5
-  },
-  "floaters": {
-    "ophthalmologist": 3
-  },
-  "eye infection": {
-    "ophthalmologist": 4
-  },
-  "ear pain": {
-    "ent": 4
-  },
-  "hearing loss": {
-    "ent": 4
-  },
-  "ringing in ears": {
-    "ent": 4
-  },
-  "sore throat": {
-    "ent": 3,
-    "internal medicine": 1
-  },
-  "difficulty swallowing": {
-    "ent": 4
-  },
-  "sinus pain": {
-    "ent": 4
-  },
-  "nosebleeds": {
-    "ent": 3
-  },
-  "nasal congestion": {
-    "ent": 3
-  },
-  "chest pain": {
-    "cardiologist": 5
-  },
-  "chest pain spreading to arm": {
-    "cardiologist": 5
-  },
-  "palpitations": {
-    "cardiologist": 4
-  },
-  "high blood pressure": {
-    "cardiologist": 4,
-    "internal medicine": 2
-  },
-  "shortness of breath on exertion": {
-    "cardiologist": 4,
-    "pulmonologist": 2
-  },
-  "swollen legs": {
-    "cardiologist": 3,
-    "internal medicine": 2
-  },
-  "fainting episodes": {
-    "cardiologist": 4,
-    "neurologist": 2
-  },
-  "chronic cough": {
-    "pulmonologist": 4
-  },
-  "shortness of breath": {
-    "pulmonologist": 4
-  },
-  "wheezing": {
-    "pulmonologist": 4
-  },
-  "asthma": {
-    "pulmonologist": 4
-  },
-  "chest tightness": {
-    "pulmonologist": 3,
-    "cardiologist": 2
-  },
-  "difficulty breathing": {
-    "pulmonologist": 5
-  },
   "abdominal pain": {
     "gastroenterologist": 4,
     "internal medicine": 2
   },
-  "diarrhea": {
-    "gastroenterologist": 3,
-    "internal medicine": 1
-  },
-  "constipation": {
-    "gastroenterologist": 3
-  },
-  "vomiting": {
-    "gastroenterologist": 3,
-    "internal medicine": 2
-  },
-  "nausea": {
-    "gastroenterologist": 2,
-    "internal medicine": 1
+  "acne": {
+    "dermatologist": 4
   },
   "acid reflux": {
     "gastroenterologist": 4
   },
-  "heartburn": {
-    "gastroenterologist": 3
+  "adhd symptoms": {
+    "psychiatrist": 4
+  },
+  "allergies": {
+    "allergist": 4
+  },
+  "anxiety": {
+    "psychiatrist": 4,
+    "psychologist": 3
+  },
+  "arthritis": {
+    "rheumatologist": 4,
+    "orthopedic": 2
+  },
+  "asthma": {
+    "pulmonologist": 4
+  },
+  "back pain": {
+    "orthopedic": 3,
+    "neurologist": 2
+  },
+  "bad breath": {
+    "dentist": 3
   },
   "bloating": {
     "gastroenterologist": 2
@@ -163,114 +39,183 @@
   "blood in stool": {
     "gastroenterologist": 5
   },
-  "chronic gas": {
-    "gastroenterologist": 2
-  },
-  "stomach pain": {
-    "gastroenterologist": 3,
-    "internal medicine": 1
-  },
-  "pain when urinating": {
-    "urologist": 4
-  },
   "blood in urine": {
     "urologist": 5
   },
-  "frequent urination": {
-    "urologist": 3
+  "blurred vision": {
+    "ophthalmologist": 3,
+    "neurologist": 1
+  },
+  "carpal tunnel": {
+    "orthopedic": 4
+  },
+  "chest pain": {
+    "cardiologist": 5
+  },
+  "chest pain spreading to arm": {
+    "cardiologist": 5
+  },
+  "chest tightness": {
+    "pulmonologist": 3,
+    "cardiologist": 2
+  },
+  "chronic cough": {
+    "pulmonologist": 4
+  },
+  "chronic gas": {
+    "gastroenterologist": 2
+  },
+  "constipation": {
+    "gastroenterologist": 3
+  },
+  "cough": {
+    "pulmonologist": 3,
+    "internal medicine": 2
+  },
+  "depression": {
+    "psychiatrist": 4,
+    "psychologist": 3
+  },
+  "diabetes": {
+    "endocrinologist": 5
+  },
+  "diarrhea": {
+    "gastroenterologist": 3,
+    "internal medicine": 1
+  },
+  "difficulty breathing": {
+    "pulmonologist": 5
+  },
+  "difficulty swallowing": {
+    "ent": 4
   },
   "difficulty urinating": {
     "urologist": 4
   },
-  "kidney stones": {
-    "urologist": 5
+  "dizziness": {
+    "neurologist": 3,
+    "ent": 3
   },
-  "urinary infection": {
-    "urologist": 4,
+  "double vision": {
+    "ophthalmologist": 4,
+    "neurologist": 3
+  },
+  "ear pain": {
+    "ent": 4
+  },
+  "eczema": {
+    "dermatologist": 4
+  },
+  "erectile dysfunction": {
+    "urologist": 4
+  },
+  "eye infection": {
+    "ophthalmologist": 4
+  },
+  "eye pain": {
+    "ophthalmologist": 4
+  },
+  "facial drooping": {
+    "neurologist": 5
+  },
+  "fainting episodes": {
+    "cardiologist": 4,
+    "neurologist": 2
+  },
+  "fatigue": {
     "internal medicine": 2
+  },
+  "fertility issues": {
+    "urologist": 3,
+    "ob-gyn": 3
+  },
+  "fever": {
+    "internal medicine": 3
+  },
+  "floaters": {
+    "ophthalmologist": 3
+  },
+  "food allergies": {
+    "allergist": 4
+  },
+  "frequent urination": {
+    "urologist": 3
+  },
+  "fungal infections": {
+    "dermatologist": 4
   },
   "groin pain": {
     "urologist": 3,
     "orthopedic": 2
   },
-  "knee pain": {
-    "orthopedic": 4
+  "gum bleeding": {
+    "dentist": 4
+  },
+  "hair loss": {
+    "dermatologist": 4
+  },
+  "hay fever": {
+    "allergist": 4,
+    "ent": 2
+  },
+  "headache": {
+    "neurologist": 3,
+    "internal medicine": 1
+  },
+  "hearing loss": {
+    "ent": 4
+  },
+  "heartburn": {
+    "gastroenterologist": 3
+  },
+  "high blood pressure": {
+    "cardiologist": 4,
+    "internal medicine": 2
   },
   "hip pain": {
     "orthopedic": 4
   },
-  "back pain": {
-    "orthopedic": 3,
-    "neurologist": 2
+  "hives": {
+    "allergist": 3,
+    "dermatologist": 2
   },
-  "shoulder pain": {
-    "orthopedic": 4
+  "hormonal imbalance": {
+    "endocrinologist": 4
+  },
+  "insomnia": {
+    "psychiatrist": 3,
+    "internal medicine": 1
+  },
+  "irregular periods": {
+    "ob-gyn": 4
+  },
+  "itchy skin": {
+    "dermatologist": 3
+  },
+  "jaw pain": {
+    "dentist": 3,
+    "ent": 2
   },
   "joint swelling": {
     "orthopedic": 3,
     "rheumatologist": 3
   },
-  "muscle pain": {
-    "orthopedic": 2,
-    "internal medicine": 1
+  "kidney stones": {
+    "urologist": 5
   },
-  "arthritis": {
-    "rheumatologist": 4,
-    "orthopedic": 2
-  },
-  "carpal tunnel": {
+  "knee pain": {
     "orthopedic": 4
   },
-  "neck pain": {
-    "orthopedic": 3,
-    "neurologist": 2
+  "loss of appetite": {
+    "internal medicine": 2,
+    "gastroenterologist": 1
   },
-  "rashes": {
-    "dermatologist": 4
+  "loss of balance": {
+    "neurologist": 4,
+    "ent": 2
   },
-  "acne": {
-    "dermatologist": 4
-  },
-  "eczema": {
-    "dermatologist": 4
-  },
-  "psoriasis": {
-    "dermatologist": 4
-  },
-  "hair loss": {
-    "dermatologist": 4
-  },
-  "scalp issues": {
-    "dermatologist": 3
-  },
-  "fungal infections": {
-    "dermatologist": 4
-  },
-  "skin allergies": {
-    "dermatologist": 3,
-    "allergist": 2
-  },
-  "itchy skin": {
-    "dermatologist": 3
-  },
-  "moles": {
-    "dermatologist": 4
-  },
-  "irregular periods": {
-    "ob-gyn": 4
-  },
-  "pcos": {
-    "ob-gyn": 4,
-    "endocrinologist": 2
-  },
-  "pregnancy concerns": {
-    "ob-gyn": 5
-  },
-  "pelvic pain": {
-    "ob-gyn": 4
-  },
-  "vaginal discharge": {
-    "ob-gyn": 4
+  "memory issues": {
+    "neurologist": 4
   },
   "menopause issues": {
     "ob-gyn": 4
@@ -278,121 +223,176 @@
   "menstrual cramps": {
     "ob-gyn": 3
   },
-  "testicular pain": {
-    "urologist": 5
+  "migraine": {
+    "neurologist": 4
   },
-  "erectile dysfunction": {
-    "urologist": 4
-  },
-  "fertility issues": {
-    "urologist": 3,
-    "ob-gyn": 3
-  },
-  "prostate problems": {
-    "urologist": 5
-  },
-  "anxiety": {
-    "psychiatrist": 4,
-    "psychologist": 3
-  },
-  "depression": {
-    "psychiatrist": 4,
-    "psychologist": 3
-  },
-  "panic attacks": {
-    "psychiatrist": 4
-  },
-  "insomnia": {
-    "psychiatrist": 3,
-    "internal medicine": 1
-  },
-  "adhd symptoms": {
-    "psychiatrist": 4
+  "moles": {
+    "dermatologist": 4
   },
   "mood swings": {
     "psychiatrist": 3
   },
-  "trauma symptoms": {
-    "psychiatrist": 4,
-    "psychologist": 4
+  "muscle pain": {
+    "orthopedic": 2,
+    "internal medicine": 1
   },
-  "stress": {
-    "psychologist": 3,
-    "psychiatrist": 2
+  "nasal congestion": {
+    "ent": 3
   },
-  "fever": {
-    "internal medicine": 3
+  "nausea": {
+    "gastroenterologist": 2,
+    "internal medicine": 1
   },
-  "fatigue": {
-    "internal medicine": 2
-  },
-  "weakness": {
-    "internal medicine": 2
-  },
-  "weight loss": {
-    "internal medicine": 3,
-    "endocrinologist": 2
-  },
-  "weight gain": {
-    "internal medicine": 2,
-    "endocrinologist": 2
+  "neck pain": {
+    "orthopedic": 3,
+    "neurologist": 2
   },
   "night sweats": {
     "internal medicine": 3
   },
-  "loss of appetite": {
-    "internal medicine": 2,
-    "gastroenterologist": 1
+  "nosebleeds": {
+    "ent": 3
   },
-  "swollen glands": {
-    "internal medicine": 3
+  "numbness or tingling": {
+    "neurologist": 4
   },
-  "diabetes": {
-    "endocrinologist": 5
+  "pain when urinating": {
+    "urologist": 4
   },
-  "thyroid problems": {
-    "endocrinologist": 5
+  "palpitations": {
+    "cardiologist": 4
   },
-  "hormonal imbalance": {
-    "endocrinologist": 4
+  "panic attacks": {
+    "psychiatrist": 4
   },
-  "allergies": {
-    "allergist": 4
+  "pcos": {
+    "ob-gyn": 4,
+    "endocrinologist": 2
   },
-  "hay fever": {
-    "allergist": 4,
-    "ent": 2
+  "pelvic pain": {
+    "ob-gyn": 4
   },
-  "food allergies": {
-    "allergist": 4
+  "pregnancy concerns": {
+    "ob-gyn": 5
   },
-  "hives": {
-    "allergist": 3,
-    "dermatologist": 2
+  "prostate problems": {
+    "urologist": 5
   },
-  "cough": {
-    "pulmonologist": 3,
-    "internal medicine": 2
+  "psoriasis": {
+    "dermatologist": 4
   },
-  "sneezing": {
-    "allergist": 2,
-    "ent": 2
+  "rashes": {
+    "dermatologist": 4
+  },
+  "red eyes": {
+    "ophthalmologist": 3
+  },
+  "ringing in ears": {
+    "ent": 4
   },
   "runny nose": {
     "ent": 2,
     "allergist": 2
   },
+  "scalp issues": {
+    "dermatologist": 3
+  },
+  "seizures": {
+    "neurologist": 5
+  },
+  "sensitivity to light": {
+    "ophthalmologist": 3,
+    "neurologist": 1
+  },
+  "shortness of breath": {
+    "pulmonologist": 4
+  },
+  "shortness of breath on exertion": {
+    "cardiologist": 4,
+    "pulmonologist": 2
+  },
+  "shoulder pain": {
+    "orthopedic": 4
+  },
+  "sinus pain": {
+    "ent": 4
+  },
+  "skin allergies": {
+    "dermatologist": 3,
+    "allergist": 2
+  },
+  "slurred speech": {
+    "neurologist": 5
+  },
+  "sneezing": {
+    "allergist": 2,
+    "ent": 2
+  },
+  "sore throat": {
+    "ent": 3,
+    "internal medicine": 1
+  },
+  "stomach pain": {
+    "gastroenterologist": 3,
+    "internal medicine": 1
+  },
+  "stress": {
+    "psychologist": 3,
+    "psychiatrist": 2
+  },
+  "sudden vision loss": {
+    "ophthalmologist": 5
+  },
+  "swollen glands": {
+    "internal medicine": 3
+  },
+  "swollen legs": {
+    "cardiologist": 3,
+    "internal medicine": 2
+  },
+  "testicular pain": {
+    "urologist": 5
+  },
+  "thyroid problems": {
+    "endocrinologist": 5
+  },
   "toothache": {
     "dentist": 5
   },
-  "jaw pain": {
-    "dentist": 3,
-    "ent": 2
+  "trauma symptoms": {
+    "psychiatrist": 4,
+    "psychologist": 4
   },
-  "gum bleeding": {
-    "dentist": 4
+  "tremors": {
+    "neurologist": 4
   },
-  "bad breath": {
-    "dentist": 3
+  "urinary infection": {
+    "urologist": 4,
+    "internal medicine": 2
+  },
+  "vaginal discharge": {
+    "ob-gyn": 4
+  },
+  "vertigo": {
+    "ent": 4,
+    "neurologist": 2
+  },
+  "vomiting": {
+    "gastroenterologist": 3,
+    "internal medicine": 2
+  },
+  "weakness": {
+    "internal medicine": 2
+  },
+  "weight gain": {
+    "internal medicine": 2,
+    "endocrinologist": 2
+  },
+  "weight loss": {
+    "internal medicine": 3,
+    "endocrinologist": 2
+  },
+  "wheezing": {
+    "pulmonologist": 4
   }
 }
