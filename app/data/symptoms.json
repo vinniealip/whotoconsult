@@ -213,29 +213,8 @@
     "urologist": 5,
     "nephrologist": 4
   },
-  "blood pressure high": {
-    "cardiologist": 4,
-    "nephrologist": 3,
-    "internal medicine": 2
-  },
-  "blood pressure low": {
-    "cardiologist": 3,
-    "internal medicine": 2
-  },
-  "blood sugar high": {
-    "endocrinologist": 5,
-    "diabetologist": 5
-  },
-  "blood sugar low": {
-    "endocrinologist": 4,
-    "diabetologist": 4
-  },
   "bloody nose": {
     "ent": 3
-  },
-  "blurred vision": {
-    "ophthalmologist": 3,
-    "neurologist": 1
   },
   "body aches": {
     "internal medicine": 2
@@ -269,9 +248,6 @@
   },
   "breast tenderness": {
     "ob-gyn": 3
-  },
-  "breathing difficulty": {
-    "pulmonologist": 5
   },
   "breathing problems": {
     "pulmonologist": 4,
@@ -444,10 +420,6 @@
   "cough chronic": {
     "pulmonologist": 4
   },
-  "cough dry": {
-    "pulmonologist": 3,
-    "allergist": 2
-  },
   "cough with blood": {
     "pulmonologist": 5
   },
@@ -581,10 +553,6 @@
   "drooping eyelid": {
     "ophthalmologist": 4,
     "neurologist": 3
-  },
-  "dry cough": {
-    "pulmonologist": 3,
-    "allergist": 2
   },
   "dry eyes": {
     "ophthalmologist": 3
@@ -2451,10 +2419,6 @@
     "ent": 4,
     "neurologist": 2
   },
-  "vision blurred": {
-    "ophthalmologist": 3,
-    "neurologist": 1
-  },
   "vision changes": {
     "ophthalmologist": 4,
     "neurologist": 2
@@ -2462,10 +2426,6 @@
   "vision disturbances": {
     "ophthalmologist": 4,
     "neurologist": 2
-  },
-  "vision double": {
-    "ophthalmologist": 4,
-    "neurologist": 3
   },
   "vision loss": {
     "ophthalmologist": 5

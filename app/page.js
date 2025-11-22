@@ -11,10 +11,61 @@ export default function Home() {
   // Get all unique symptoms from the data
   const allSymptoms = Object.keys(symptomData);
 
-  // Filter symptoms based on search
-  const filteredSymptoms = allSymptoms.filter(symptom =>
-    symptom.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Enhanced search function with keyword matching
+  const filteredSymptoms = allSymptoms.filter(symptom => {
+    if (!searchTerm) return true;
+    
+    const symptomLower = symptom.toLowerCase();
+    const searchLower = searchTerm.toLowerCase();
+    
+    // Direct substring match
+    if (symptomLower.includes(searchLower)) return true;
+    
+    // Split search term into individual words
+    const searchWords = searchLower.split(/\s+/);
+    
+    // Check if all search words appear somewhere in the symptom
+    const allWordsFound = searchWords.every(word => 
+      symptomLower.includes(word)
+    );
+    
+    if (allWordsFound) return true;
+    
+    // Handle common variations and synonyms
+    const variations = {
+      'high': ['elevated', 'increased', 'raised'],
+      'low': ['decreased', 'reduced', 'drop'],
+      'pain': ['ache', 'aching', 'hurt', 'hurting', 'sore'],
+      'blood pressure': ['bp', 'hypertension', 'hypotension'],
+      'blood sugar': ['glucose', 'diabetes', 'diabetic'],
+      'breathing': ['breath', 'respiratory'],
+      'vision': ['sight', 'visual', 'eye'],
+      'hearing': ['deaf', 'audio'],
+      'stomach': ['abdominal', 'belly', 'gastric'],
+      'heart': ['cardiac', 'cardio'],
+      'kidney': ['renal'],
+      'liver': ['hepatic'],
+      'skin': ['dermal', 'rash']
+    };
+    
+    // Check variations
+    for (const [key, synonyms] of Object.entries(variations)) {
+      if (searchLower.includes(key)) {
+        for (const synonym of synonyms) {
+          if (symptomLower.includes(synonym)) return true;
+        }
+      }
+      
+      // Check reverse - if symptom contains key and search contains synonym
+      if (symptomLower.includes(key)) {
+        for (const synonym of synonyms) {
+          if (searchLower.includes(synonym)) return true;
+        }
+      }
+    }
+    
+    return false;
+  });
 
   // Toggle symptom selection
   const toggleSymptom = (symptom) => {
