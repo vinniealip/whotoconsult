@@ -82,10 +82,17 @@ export default function Home() {
   const getAgeAppropriateSpecialist = (specialist, userAge) => {
     const ageNum = parseInt(userAge);
     
-    // Specialists that don't apply to young children
-    const adultOnlySpecialists = ['ob-gyn', 'urologist'];
-    if (ageNum <= 10 && adultOnlySpecialists.includes(specialist)) {
-      return null; // Filter out these specialists for young children
+    // Specialists that don't apply to children/teens (under 18)
+    const adultOnlySpecialists = ['ob-gyn', 'urologist', 'internal medicine'];
+    
+    // For young children (≤10), filter out reproductive specialists
+    if (ageNum <= 10 && ['ob-gyn', 'urologist'].includes(specialist)) {
+      return null;
+    }
+    
+    // For all children/teens (≤17), filter out internal medicine
+    if (ageNum <= 17 && specialist === 'internal medicine') {
+      return null;
     }
     
     // For teenagers, some reproductive health specialists are appropriate
@@ -103,9 +110,9 @@ export default function Home() {
         return `Pediatric ${specialist.charAt(0).toUpperCase() + specialist.slice(1)}`;
       }
       
-      // Specialists that remain the same for children
+      // Specialists that remain the same for children (but capitalized)
       const sameForChildren = [
-        'pediatrician', 'dentist', 'family medicine', 'internal medicine',
+        'pediatrician', 'dentist', 'family medicine',
         'podiatrist', 'plastic surgeon', 'sports medicine', 'pain management',
         'psychologist', 'vascular surgeon', 'diabetologist', 'nutritionist'
       ];
