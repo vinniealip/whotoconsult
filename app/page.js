@@ -81,7 +81,6 @@ export default function Home() {
   // Function to get age-appropriate specialist name
   const getAgeAppropriateSpecialist = (specialist, userAge) => {
     const ageNum = parseInt(userAge);
-    console.log('Debug - Processing specialist:', specialist, 'for age:', ageNum);
     
     // Specialists that don't apply to children/teens (under 18)
     const adultOnlySpecialists = ['ob-gyn', 'urologist', 'internal medicine'];
@@ -130,7 +129,6 @@ export default function Home() {
       // Handle special cases for teenagers (13-17)
       if (ageNum >= 13) {
         if (specialist === 'ob-gyn') {
-          console.log('Debug - Converting ob-gyn to Adolescent Gynecologist for age:', ageNum);
           return 'Adolescent Gynecologist';
         }
         if (specialist === 'urologist') {
@@ -158,7 +156,6 @@ export default function Home() {
       return;
     }
 
-    console.log('Debug - Age entered:', age, 'Type:', typeof age);
 
     // Check for red flags first
     const redFlags = ['chest pain spreading to arm', 'sudden severe headache', 'difficulty breathing', 'loss of consciousness'];
