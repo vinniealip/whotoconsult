@@ -31,8 +31,8 @@
   },
   "aches and pains": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "acid reflux": {
     "gastroenterologist": 4
@@ -220,8 +220,8 @@
   },
   "body aches": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "body odor": {
     "dermatologist": 2,
@@ -342,8 +342,8 @@
   },
   "chills": {
     "internal medicine": 3,
-    "family medicine": 3,
-    "pediatrician": 3
+    "family medicine": 5,
+    "pediatrician": 6
   },
   "chlamydia symptoms": {
     "urologist": 4,
@@ -439,8 +439,8 @@
   },
   "cramps": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "crohn's disease symptoms": {
     "gastroenterologist": 5
@@ -469,8 +469,8 @@
   },
   "dehydration": {
     "internal medicine": 3,
-    "family medicine": 3,
-    "pediatrician": 3
+    "family medicine": 5,
+    "pediatrician": 6
   },
   "delayed period": {
     "ob-gyn": 4
@@ -750,13 +750,13 @@
   },
   "fever": {
     "internal medicine": 3,
-    "family medicine": 3,
-    "pediatrician": 3
+    "family medicine": 5,
+    "pediatrician": 6
   },
   "fever high": {
     "internal medicine": 4,
-    "family medicine": 4,
-    "pediatrician": 4
+    "family medicine": 6,
+    "pediatrician": 7
   },
   "fever recurring": {
     "internal medicine": 4,
@@ -791,8 +791,8 @@
   },
   "flu symptoms": {
     "internal medicine": 3,
-    "family medicine": 3,
-    "pediatrician": 3
+    "family medicine": 5,
+    "pediatrician": 6
   },
   "fluid retention": {
     "cardiologist": 4,
@@ -979,7 +979,7 @@
   },
   "hangover": {
     "internal medicine": 1,
-    "family medicine": 1,
+    "family medicine": 2,
     "pediatrician": 1
   },
   "hay fever": {
@@ -1042,8 +1042,8 @@
   },
   "heat exhaustion": {
     "internal medicine": 4,
-    "family medicine": 4,
-    "pediatrician": 4
+    "family medicine": 6,
+    "pediatrician": 7
   },
   "heat intolerance": {
     "endocrinologist": 3
@@ -1086,8 +1086,8 @@
   },
   "hiccups": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "high blood pressure": {
     "cardiologist": 4,
@@ -1301,8 +1301,8 @@
   },
   "lethargy": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "leukemia symptoms": {
     "hematologist": 5,
@@ -1406,8 +1406,8 @@
   },
   "medication side effects": {
     "internal medicine": 3,
-    "family medicine": 3,
-    "pediatrician": 3
+    "family medicine": 5,
+    "pediatrician": 6
   },
   "melanoma": {
     "dermatologist": 5,
@@ -1903,8 +1903,8 @@
   },
   "shivering": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "shortness of breath": {
     "pulmonologist": 4,
@@ -2119,8 +2119,8 @@
   },
   "swelling": {
     "internal medicine": 2,
-    "family medicine": 2,
-    "pediatrician": 2
+    "family medicine": 4,
+    "pediatrician": 5
   },
   "swelling in legs": {
     "cardiologist": 4,
