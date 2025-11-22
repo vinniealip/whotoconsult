@@ -85,8 +85,8 @@ export default function Home() {
     // Specialists that don't apply to children/teens (under 18)
     const adultOnlySpecialists = ['ob-gyn', 'urologist', 'internal medicine'];
     
-    // For young children (≤10), filter out reproductive specialists
-    if (ageNum <= 10 && ['ob-gyn', 'urologist'].includes(specialist)) {
+    // For young children (≤12), filter out reproductive specialists
+    if (ageNum <= 12 && ['ob-gyn', 'urologist'].includes(specialist)) {
       return null;
     }
     
