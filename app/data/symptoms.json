@@ -621,7 +621,9 @@
     "pulmonologist": 5
   },
   "enlarged prostate": {
-    "urologist": 5
+    "urologist": 5,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "epilepsy": {
     "neurologist": 5
@@ -1748,13 +1750,19 @@
     "oncologist": 5
   },
   "prostate enlargement": {
-    "urologist": 5
+    "urologist": 5,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "prostate problems": {
-    "urologist": 5
+    "urologist": 5,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "prostatitis": {
-    "urologist": 5
+    "urologist": 5,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "psoriasis": {
     "dermatologist": 4,
