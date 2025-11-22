@@ -2414,10 +2414,14 @@
     "pediatrician": 4
   },
   "vaginal bleeding": {
-    "ob-gyn": 5
+    "ob-gyn": 5,
+    "pediatrician": 4,
+    "family medicine": 3
   },
   "vaginal discharge": {
-    "ob-gyn": 4
+    "ob-gyn": 4,
+    "pediatrician": 3,
+    "family medicine": 2
   },
   "vaginal dryness": {
     "ob-gyn": 4
