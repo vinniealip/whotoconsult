@@ -249,10 +249,9 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">
             © 2025 WhoToConsult. This tool only serves as a guide and does not constitute actual medical advice. 
-        Assessment should be done upon actual consultation with a licensed medical practitioner.
           </p>
           <p className="text-xs mt-2 text-gray-400">
-            Always consult with a qualified healthcare professional for proper diagnosis and treatment.
+            Diagnosis and treatment should be done by a qualified healthcare professional. 
           </p>
         </div>
       </footer>
