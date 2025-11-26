@@ -309,10 +309,12 @@ export default function Home() {
             
             <input
               type="text"
-              placeholder="Search symptoms... (e.g., headache, fever, cough)"
+              placeholder="Type to search symptoms... (e.g., headache, fever, cough)"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent mb-4"
+              autoComplete="off"
+              autoFocus={false}
             />
 
             {/* Selected Symptoms */}
@@ -338,6 +340,13 @@ export default function Home() {
               </div>
             )}
 
+            {/* Search Results Info */}
+            {searchTerm && (
+              <div className="mb-4 text-sm text-gray-600">
+                Found {filteredSymptoms.length} symptom{filteredSymptoms.length !== 1 ? 's' : ''} matching "{searchTerm}"
+              </div>
+            )}
+
             {/* Symptom List */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 max-h-96 overflow-y-auto">
               {filteredSymptoms.map(symptom => (
@@ -355,8 +364,15 @@ export default function Home() {
               ))}
             </div>
 
-            {filteredSymptoms.length === 0 && (
-              <p className="text-gray-500 text-center py-8">No symptoms found matching "{searchTerm}"</p>
+            {filteredSymptoms.length === 0 && searchTerm && (
+              <div className="text-center py-8">
+                <p className="text-gray-500">No symptoms found matching "{searchTerm}"</p>
+                <p className="text-sm text-gray-400 mt-2">Try searching for related terms or check your spelling</p>
+              </div>
+            )}
+
+            {!searchTerm && (
+              <p className="text-gray-400 text-center py-4">Start typing to search through {allSymptoms.length} available symptoms</p>
             )}
           </div>
 
